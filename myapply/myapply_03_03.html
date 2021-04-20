@@ -1,0 +1,58 @@
+<?php include "../layout/header.html" ?>
+
+
+<div id="container">
+	<div class="underline_wrap">
+		<div class="subtop_wrap">
+			<ul class="location_list">
+				<li><a href="javascript:;" class="home">홈</a></li>
+				<li><a href="javascript:;">직무연수</a>
+					<ul>
+						<li><a href="javascript:;">직무연수</a></li>
+						<li><a href="javascript:;">자율연수</a></li>
+						<li><a href="javascript:;">연수안내</a></li>
+						<li><a href="javascript:;">고객센터</a></li>
+						<li><a href="javascript:;">나의강의실</a></li>
+						<li><a href="javascript:;">연수원소개</a></li>
+					</ul>
+				</li>
+				<li><a href="javascript:;">자율연수</a>
+					<ul>
+						<li><a href="javascript:;">자율연수</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- //location_list -->
+			<h3 class="tit_page">연수후기</h3>
+		</div>
+		<!-- //subtop_wrap -->
+	</div>
+	<!-- //underline_wrap -->
+	<div class="sub_wrap">
+		<table class="base_tbl  input_tbl  top_5000">
+			<caption>연수후기<span>제목, 내용 등 수강후기를 입력하는 양식</span></caption>
+			<tbody>
+				<tr>
+					<th scope="row">제목</th>
+					<td>
+						<input type="text" id="tit_lbl" class="100p" title="연수후기 게시물 제목" value="연수후기 게시물 제목">
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">내용</th>
+					<td>
+						<textarea title="수강후기 입력" id="post_lbl" class="w100p" rows="5">연수후기 게시물 내용입니다.</textarea>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="btn_bottom">
+			<button type="button" class="btn_bigwire">취소</button>
+			<button type="button" class="btn_bigblue">등록</button> <!-- 수정버튼일 경우 클래스 그대로. -->
+		</div>
+	</div>
+	<!-- //sub_wrap -->
+</div>
+
+
+<?php include "../layout/footer.html" ?>

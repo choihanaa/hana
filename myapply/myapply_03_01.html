@@ -1,0 +1,157 @@
+<?php include "../layout/header.html" ?>
+
+
+<div id="container">
+	<div class="underline_wrap">
+		<div class="subtop_wrap">
+			<ul class="location_list">
+				<li><a href="javascript:;" class="home">홈</a></li>
+				<li><a href="javascript:;">자율연수</a>
+					<ul>
+						<li><a href="javascript:;">직무연수</a></li>
+						<li><a href="javascript:;">자율연수</a></li>
+						<li><a href="javascript:;">연수안내</a></li>
+						<li><a href="javascript:;">고객센터</a></li>
+						<li><a href="javascript:;">나의강의실</a></li>
+						<li><a href="javascript:;">연수원소개</a></li>
+					</ul>
+				</li>
+				<li><a href="javascript:;">자율연수</a>
+					<ul>
+						<li><a href="javascript:;">자율연수</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- //location_list -->
+			<h3 class="tit_page">자율연수</h3>
+		</div>
+		<!-- //subtop_wrap -->
+	</div>
+	<!-- //underline_wrap -->
+	<div class="sub_wrap">				
+		<ul class="category_list">
+			<li>
+				<span class="tit">학습대상</span>
+				<input type="radio" name="target" id="target1_lbl" class="css-radio" checked><label for="target1_lbl">전체</label>
+				<input type="radio" name="target" id="target2_lbl" class="css-radio"><label for="target2_lbl">유초등</label>
+				<input type="radio" name="target" id="target3_lbl" class="css-radio"><label for="target3_lbl">중등</label>
+				<input type="radio" name="target" id="target4_lbl" class="css-radio"><label for="target4_lbl">일반</label>
+			</li>
+		</ul>
+		<!-- //category_box -->
+		<div class="search_conditoin clear"> 
+			<div class="search_bar">
+				<input type="text" title="검색어 입력" id="txt_lbl" placeholder="검색어를 입력하세요.">
+				<button type="button" class="btn_darkzoom">찾기</button>
+			</div>
+			<div class="sort_line">
+				<a href="javascript:;">차시순</a>
+				<a href="javascript:;" class="on">과정명순</a>
+			</div>
+		</div>
+		<!-- //search_conditoin -->
+		<ul class="board_list  apply_board">
+			<li>
+				<img src="../img/img_board01.jpg" class="img_board" alt="SW교육">
+				<ul class="color_btns clear">
+					<li><a href="javascript:;" class="fifteen">15차시</a></li>
+					<li><a href="javascript:;" class="new">신규</a></li>
+					<li><a href="javascript:;" class="recomm">추천</a></li>
+				</ul>
+				<a href="javascript:;">
+					<dl>
+						<dt>꿈과 끼를 키우는 창의교육(과학기술 예체능)</dt>
+						<dd>
+							<span>자율</span>
+							<span>원격연수</span>
+							<span>전체</span>
+						</dd>
+					</dl>
+				</a>
+				<div class="btn_wrap">
+					<button type="button" class="btn_wireblue">상세보기</button>
+				</div>
+			</li>								
+			<li>
+				<img src="../img/img_board02.jpg" class="img_board" alt="융합인재교육 초등">
+				<ul class="color_btns clear">
+					<li><a href="javascript:;" class="fifteen">15차시</a></li>
+					<li><a href="javascript:;" class="new">신규</a></li>
+				</ul>
+				<a href="javascript:;">
+					<dl>
+						<dt>초등학생의 성장을 이끌어 내는 평가 전문 과정</dt>
+						<dd>
+							<span>자율</span>
+							<span>종합연수</span>
+							<span>전체</span>
+						</dd>
+					</dl>
+				</a>
+				<div class="btn_wrap">
+					<button type="button" class="btn_wireblue">장소정보</button>
+					<button type="button" class="btn_wireblue mo_hide">미리보기</button>
+					<button type="button" class="btn_wireblue">상세보기</button>
+				</div>
+			</li>							
+			<li>
+				<img src="../img/img_board03.jpg" class="img_board" alt="융합인재교육 중학">
+				<ul class="color_btns clear">
+					<li><a href="javascript:;" class="fifteen">15차시</a></li>
+					<li><a href="javascript:;" class="recomm">추천</a></li>
+				</ul>
+				<a href="javascript:;">
+					<dl>
+						<dt>자유학기제를 위한 꿈과 끼 프로그램-스마트폰 앱 개발 과정 </dt>
+						<dd>
+							<span>자율</span>
+							<span>원격연수</span>
+							<span>전체</span>
+						</dd>
+					</dl>
+				</a>
+				<div class="btn_wrap">
+					<button type="button" class="btn_wireblue mo_hide">미리보기</button>
+					<button type="button" class="btn_wireblue">상세보기</button>
+				</div>
+			</li>
+		</ul>
+		<!-- //board_list -->
+	</div>
+	<!-- //sub_wrap -->
+</div>
+
+	
+<!-- 장소정보 팝업 -->
+<div class="popup_area" style="display: block;">		<!-- ★ 확인을 위해 넣은 style="display: block;" 은 제거해 주십시오! ★ -->
+	<div class="popup_base w650">	
+		<h3 class="pop_tit">장소정보</h3>
+		<a href="javascript:;" class="pop_close" onclick="$(this).parent().parent().hide();">닫기</a>
+		<div class="pop_inner">
+			<ul class="txt_list">
+				<li>장&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소<span class="gubun">|</span>테크빌빌딩 8층, 연수실</li>
+				<li>주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소<span class="gubun">|</span>서울특별시 강남구 언주로 551 프라자빌딩 5, 6, 8층</li>
+				<li>연&nbsp;&nbsp;수&nbsp;&nbsp;일<span class="gubun">|</span>2020-02-07 ~ 2020-02-10</li>
+			</ul>
+		</div>
+		<!-- //pop_inner -->
+		<div class="popbtn_wrap">
+			<button type="button" class="btn_blue_b w100p">확인</button>
+		</div>
+	</div>
+	<!-- //popup_base -->
+</div>
+<!-- //popup_area (장소정보 팝업) -->
+
+<!-- 영상팝업 -->
+<div class="popup_area" style="display: block;">		<!-- ★ 확인을 위해 넣은 style="display: block;" 은 제거해 주십시오! ★ -->
+	<div class="popup_base w650">	
+		<a href="javascript:;" class="pop_close" onclick="$(this).parent().parent().hide();">닫기</a>
+		<div class="sample">강의미리보기영상 팝업(영상 플레이됨)</div>
+	</div>
+	<!-- //popup_base -->
+</div>
+<!-- //popup_area (영상 팝업) -->
+
+
+<?php include "../layout/footer.html" ?>

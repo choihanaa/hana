@@ -1,0 +1,112 @@
+<?php include "../layout/header.html" ?>
+
+
+<div id="container">
+	<div class="underline_wrap">
+		<div class="subtop_wrap">
+			<ul class="location_list">
+				<li><a href="javascript:;" class="home">홈</a></li>
+				<li><a href="javascript:;">고객센터</a>
+					<ul>
+						<li><a href="javascript:;">직무연수</a></li>
+						<li><a href="javascript:;">자율연수</a></li>
+						<li><a href="javascript:;">연수안내</a></li>
+						<li><a href="javascript:;">고객센터</a></li>
+						<li><a href="javascript:;">나의강의실</a></li>
+						<li><a href="javascript:;">연수원소개</a></li>
+					</ul>
+				</li>
+				<li><a href="javascript:;">문의게시판</a>
+					<ul>
+						<li><a href="javascript:;">공지사항</a></li>
+						<li><a href="javascript:;">자주묻는질문</a></li>
+						<li><a href="javascript:;">원격지원요청</a></li>
+						<li><a href="javascript:;">문의게시판</a></li>
+						<li><a href="javascript:;">연수후기</a></li>
+						<li><a href="javascript:;">신규과정제안</a></li>
+						<li><a href="javascript:;">연수자료실</a></li>
+						<li><a href="javascript:;">학습소프트웨어</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- //location_list -->
+			<h3 class="tit_page">문의게시판</h3>
+		</div>
+		<!-- //subtop_wrap -->
+	</div>
+	<!-- //underline_wrap -->
+	<div class="sub_wrap">	
+		<table class="base_tbl  input_tbl top_5000">
+			<caption>구분, 제목, 내용, 첨부파일 등 문의 정보를 입력하는 양식</caption>
+			<tbody>
+				<tr>
+					<th scope="row"><label for="category_lbl">구분</label></th>
+					<td>
+						<select id="category_lbl" title="문의 구분">
+							<option value="">회원관련</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="tit_lbl">제목</label></th>
+					<td><input type="text" id="tit_lbl" class="100p" title="질문게시물 제목" placeholder="질문게시물 제목"></td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="q_lbl">내용</label></th>
+					<td><textarea title="학습문의 내용 입력" id="q_lbl" class="w100p" rows="5" placeholder="질문 게시물 내용입니다."></textarea></td>
+				</tr>
+				<tr><th scope="row"><label for="fileName0">첨부파일</label></th>
+					<td>
+						<div class="file_input">
+							<span class="input-type clear-show">
+								<input type="text" id="fileName0" name="fileName" class="file_input_textbox" readonly="readonly" title="첨부파일 제목" placeholder="첨부파일.zip">
+								<button type="button" class="btn-clear" tabindex="-1">×</button>
+							</span>
+							<div class="file_input_div">
+								<label for="img_file0" class="btn-lineBlack" title="파일찾기">파일찾기</label>
+								<input type="file" id="img_file0" name="file" onchange="javascript: document.getElementById('fileName0').value = this.value; this.value,inputClearShow(this);" style="display:none;">
+							</div>
+						</div>
+						<!-- //file_input (파일첨부) -->
+						<div class="file_input">
+							<span class="input-type clear-show">
+								<input type="text" id="fileName1" name="fileName" class="file_input_textbox" readonly="readonly" title="첨부파일 제목" placeholder="첨부파일.zip">
+								<button type="button" class="btn-clear" tabindex="-1">×</button>
+							</span>
+							<div class="file_input_div">
+								<label for="img_file1" class="btn-lineBlack" title="파일찾기">파일찾기</label>
+								<input type="file" id="img_file1" name="file" onchange="javascript: document.getElementById('fileName1').value = this.value; this.value,inputClearShow(this);" style="display:none;">
+							</div>
+						</div>
+						<!-- //file_input (파일첨부) -->
+						<p class="file_info">제한 파일 확장자 : html, jpg, exe<br>첨부파일 2개, 파일 크기 : 10MB 이하</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="base_tbl agree_tbl">
+			<caption>정보이용동의사항 제공</caption>
+			<tbody>
+				<tr><th scope="row">정보이용<span class="brline">동의사항</span></th>
+					<td>
+						<ul class="agree_list">
+							<li>- 개인정보 수집 주체 : 한국과학창의재단</li>
+							<li>- 개인정보의 수집 이용목적 : 제안 내용 확인 및 결과 답변</li>
+							<li>- 수집하는 개인정보의 항목 : 성명, 이메일, 전화번호</li>
+							<li>- 개인정보의 보유, 이용기간: 수집일로부터 3년 간</li>
+						</ul>
+						<input type="checkbox" class="css-checkbox" id="agree_lbl"><label for="agree_lbl">동의합니다.</label>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="btn_bottom">
+			<button type="button" class="btn_bigwire">취소</button>
+			<button type="button" class="btn_bigblue">등록</button>
+		</div>
+	</div>
+	<!-- //sub_wrap -->
+</div>
+
+
+<?php include "../layout/footer.html" ?>

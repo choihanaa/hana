@@ -1,0 +1,197 @@
+<?php include "../layout/header.html" ?>
+
+
+<div id="container">
+	<div class="underline_wrap">
+		<div class="subtop_wrap">
+			<ul class="location_list">
+				<li><a href="javascript:;" class="home">홈</a></li>
+				<li><a href="javascript:;">직무연수</a>
+					<ul>
+						<li><a href="javascript:;">직무연수</a></li>
+						<li><a href="javascript:;">자율연수</a></li>
+						<li><a href="javascript:;">연수안내</a></li>
+						<li><a href="javascript:;">고객센터</a></li>
+						<li><a href="javascript:;">나의강의실</a></li>
+						<li><a href="javascript:;">연수원소개</a></li>
+					</ul>
+				</li>
+				<li><a href="javascript:;">자율연수</a>
+					<ul>
+						<li><a href="javascript:;">자율연수</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- //location_list -->
+			<h3 class="tit_page">수강신청</h3>
+		</div>
+		<!-- //subtop_wrap -->
+	</div>
+	<!-- //underline_wrap -->
+	<div class="sub_wrap">
+		<h4 class="tit_task top_5000">수강신청 동의서</h4>
+		<div class="caution_app">
+			<ul>
+				<li>1. 해당 교육과정은 자율연수입니다. <em>(교원 연수실적 미반영)</em></li>
+				<li>2. 자율과정은 <em class="brdrbtm">교육청에 이수결과가 통보되지 않으며, 나이스에 등재되지 않습니다.</em> 수강신청에 착오 없으시기 바랍니다.
+				</li>
+			</ul>
+		</div>
+		<!-- //caution_app -->
+		<p class="agree_line txt_left pt10">
+			<input type="checkbox" class="css-checkbox" id="agree_lbl" checked="">
+			<label for="agree_lbl">위 사항을 숙지하였으며, 이에 동의합니다.</label>
+		</p>
+		<h4 class="tit_task top_5020">수강신청 정보</h4>
+		<table class="base_tbl app_tbl">
+			<caption>수강신청 정보를 제공하고 입력하는 양식</caption>
+			<tbody>
+				<tr>
+					<th scope="row">과정명</th>
+					<td>꿈과 끼를 키우는 창의교육(과학기술 예체능) - 5기</td>
+				</tr>
+				<tr>
+					<th scope="row">신청자명</th>
+					<td>김신청</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="school_lbl">소속기관(학교)</label></th>
+					<td class="fontsize0">
+						<input type="text" id="school_lbl" class="respons_w" title="학교명 입력" placeholder="테크빌고등학교">
+						<button type="button" class="btn_wire">검색</button>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">연락처</th>
+					<td>010-3173-0189</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="bigo1_lbl">비고1</label></th>
+					<td><input type="text" id="bigo1_lbl" title="비고1 입력" class="w100p"></td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="bigo2_lbl">비고2</label></th>
+					<td><input type="text" id="bigo2_lbl" title="비고2 입력" class="w100p"></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="btn_bottom">
+			<button type="button" class="btn_bigwire">취소</button>
+			<button type="button" class="btn_bigblue">신청하기</button> <!-- 선택강의신청은 '선택강의신청하기' 로 변경. -->
+		</div>
+		<!-- //btn_bottom -->
+	</div>
+	<!-- //sub_wrap -->
+</div>
+
+
+<!-- 학교검색 팝업 -->
+<div class="popup_area" style="display: block;">
+	<!-- ★ 확인을 위해 넣은 style="display: block;" 은 제거해 주십시오! ★ -->
+	<div class="popup_base w650">
+		<h3 class="pop_tit">학교검색</h3>
+		<a href="javascript:;" class="pop_close" onclick="$(this).parent().parent().hide();">닫기</a>
+		<div class="pop_inner">
+			<table class="popup_tbl school_tbl input_tbl">
+				<caption>학교명 검색 양식</caption>
+				<tbody>
+					<tr>
+						<th scope="row">학교명</th>
+						<td>
+							<input type="text" id="name_lbl" title="학교명 입력" placeholder="토평초등학교">
+							<button type="button" class="btn_wire">검색</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<ul class="board_list pop_board">
+				<li>
+					<a href="javascript:;">
+						<div class="btn_list">
+							<span class="brline"><span class="tit">교육청</span>경기도</span>
+							<span class="brline"><span class="tit">학교명</span>구리남양주교육지원청</span>
+							<span class="new_line">
+								<span class="brline"><span class="tit">학교구분</span>토평초등학교</span>
+								<span class="brline"><span class="tit">학교코드</span>초등(초등학교)</span>
+							</span>
+						</div>
+					</a>
+					<div class="btn_wrap">
+						<button type="button" class="btn_graypop">선택</button>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<div class="btn_list">
+							<span class="brline"><span class="tit">교육청</span>경기도</span>
+							<span class="brline"><span class="tit">학교명</span>구리남양주교육지원청</span>
+							<span class="new_line">
+								<span class="brline"><span class="tit">학교구분</span>토평초등학교 병설유치원</span>
+								<span class="brline"><span class="tit">학교코드</span>초등(유치원)</span>
+							</span>
+						</div>
+					</a>
+					<div class="btn_wrap">
+						<button type="button" class="btn_graypop">선택</button>
+					</div>
+				</li>
+				<li class="mo_hide">
+					<a href="javascript:;">
+						<div class="btn_list">
+							<span class="brline"><span class="tit">교육청</span>제주특별자치도</span>
+							<span class="brline"><span class="tit">학교명</span>서귀포시교육지원청</span>
+							<span class="new_line">
+								<span class="brline"><span class="tit">학교구분</span>토평초등학교</span>
+								<span class="brline"><span class="tit">학교코드</span>초등(초등학교)</span>
+							</span>
+						</div>
+					</a>
+					<div class="btn_wrap">
+						<button type="button" class="btn_graypop">선택</button>
+					</div>
+				</li>
+				<li class="mo_hide">
+					<a href="javascript:;">
+						<div class="btn_list">
+							<span class="brline"><span class="tit">교육청</span>제주특별자치도</span>
+							<span class="brline"><span class="tit">학교명</span>서귀포시교육지원청</span>
+							<span class="new_line">
+								<span class="brline"><span class="tit">학교구분</span>토평초등학교 병설유치원</span>
+								<span class="brline"><span class="tit">학교코드</span>초등(유치원)</span>
+							</span>
+						</div>
+					</a>
+					<div class="btn_wrap">
+						<button type="button" class="btn_graypop">선택</button>
+					</div>
+				</li>
+			</ul>
+			<!-- //board_list -->
+			<div class="board_page">
+				<a href="javascript:;" class="firstpage">첫페이지</a>
+				<a href="javascript:;" class="prevpage">이전페이지</a>
+				<a href="javascript:;" class="on">1</a>
+				<a href="javascript:;">2</a>
+				<a href="javascript:;">3</a>
+				<a href="javascript:;">4</a>
+				<a href="javascript:;">5</a>
+				<a href="javascript:;" class="mo_hide">6</a>
+				<a href="javascript:;" class="mo_hide">7</a>
+				<a href="javascript:;" class="mo_hide">8</a>
+				<a href="javascript:;" class="mo_hide">9</a>
+				<a href="javascript:;" class="mo_hide">10</a>
+				<a href="javascript:;" class="nextpage">다음페이지</a>
+				<a href="javascript:;" class="lastpage">마지막페이지</a>
+			</div>
+		</div>
+		<!-- //pop_inner -->
+		<div class="popbtn_wrap">
+			<button type="button" class="btn_blue_b w100p">닫기</button>
+		</div>
+	</div>
+	<!-- //popup_base -->
+</div>
+<!-- //popup_area : 학교검색 팝업 -->
+
+
+<?php include "../layout/footer.html" ?>
