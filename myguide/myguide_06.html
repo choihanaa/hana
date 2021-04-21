@@ -1,298 +1,134 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-	<title> kofac </title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<meta charset="utf-8" />
-	<link rel="stylesheet" href="../css/swiper.min.css">
-	<link rel="stylesheet" href="../css/kofac_common.css" />
-</head>
-<body>
-<ul class="skipnavi">
-	<li><a href="#container">본문내용</a></li>
-</ul>
-	<div id="wrap">
-		<header id="header">	
-			<h1><a href="javascript:;">한국과학창의재단 종합·원격 연수원에 오신 것을 환영합니다</a></h1>
-			<p class="mo_callmenu">
-				<a href="javascript:;" >모바일 메뉴 부르기/닫기</a>
-			</p>
-			<div class="mob_slidingbg"></div>
-			<div class="mob_sliding">
-				<ul class="util clear">
-					<li class="home_w"><button type="button" class="btn_home_w">home</button></li>
-					<li class="login">
-						<!-- <a href="javascript:;"><span class="ic"></span>LOGIN</a> -->
-						<p class="after_login">홍길동님, 안녕하세요<span class="ic"></span></p>					<!-- login 후 -->
-					</li>
-					<li class="join">
-						<a href="javascript:;">JOIN</a>
-						<!-- <a href="javascript:;">logout</a> -->					<!-- login 후 -->
-					</li>
-					<li class="link"><a href="javascript:;" class="btn_wirernd"><span class="ic"></span>연간연수일정</a></li>
-				</ul>
-				<!-- //_util -->
-				<nav class="gnb_wrap">
-					<div class="gnb_bg"></div>
-					<h2 class="hdd">메인메뉴</h2>
-					<ul class="gnb">
-						<li>
-							<a href="javascript:;">직무연수</a>
-							<ul>
-								<li><a href="javascript:;">종합연수</a></li>
-								<li><a href="javascript:;">원격연수</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="javascript:;">자율연수</a>
-							<ul>
-								<li><a href="javascript:;">자율연수</a></li>
-							</ul>
-						</li>
-						<li class="on">
-							<a href="javascript:;">연수안내</a>
-							<ul>
-								<li><a href="javascript:;">연수구분</a></li>
-								<li><a href="javascript:;">연간일정</a></li>
-								<li><a href="javascript:;">연수안내공문</a></li>
-								<li><a href="javascript:;">신청방법</a></li>
-								<li><a href="javascript:;">학습방법</a></li>
-								<li><a href="javascript:;" class="on">평가/이수기준</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="javascript:;">고객센터</a>
-							<ul>
-								<li><a href="javascript:;">공지사항</a></li>
-								<li><a href="javascript:;">자주묻는질문</a></li>
-								<li><a href="javascript:;">원격지원요청</a></li>
-								<li><a href="javascript:;">문의게시판</a></li>
-								<li><a href="javascript:;">연수후기</a></li>
-								<li><a href="javascript:;">신규과정제안</a></li>
-								<li><a href="javascript:;">연수자료실</a></li>
-								<li><a href="javascript:;">학습소프트웨어</a></li>
-							</ul>
-						</li>
-						<li class="myroom">
-							<a href="javascript:;">나의강의실</a>
-							<ul >
-								<li><a href="javascript:;">학습현황</a></li>
-								<li><a href="javascript:;">연수이력</a></li>
-								<li><a href="javascript:;">취소이력</a></li>
-								<li><a href="javascript:;">개인정보수정</a></li>
-								<li><a href="javascript:;">나의게시글</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="javascript:;">연수원소개</a>
-							<ul>
-								<li><a href="javascript:;">인사말</a></li>
-								<li><a href="javascript:;">설립목적</a></li>
-								<li><a href="javascript:;">인가서</a></li>
-								<li><a href="javascript:;">연수원규칙</a></li>
-								<li><a href="javascript:;">조직도</a></li>
-							</ul>
-						</li>
+<?php include "../layout/header.html" ?>
+
+
+<div id="container">
+	<div class="underline_wrap">
+		<div class="subtop_wrap">
+			<ul class="location_list">
+				<li><a href="javascript:;" class="home">홈</a></li>
+				<li><a href="javascript:;">연수안내</a>
+					<ul>
+						<li><a href="javascript:;">직무연수</a></li>
+						<li><a href="javascript:;">자율연수</a></li>
+						<li><a href="javascript:;">연수안내</a></li>
+						<li><a href="javascript:;">고객센터</a></li>
+						<li><a href="javascript:;">나의강의실</a></li>
+						<li><a href="javascript:;">연수원소개</a></li>
 					</ul>
-				</nav>
-				<!-- //gnb_wrap -->	
-				<ul class="header_btn clear">
-					<li><a href="javascript:;">원격지원센터</a></li>
-					<li><a href="javascript:;">찾아오시는 길</a></li>
-					<li><a href="javascript:;">학습소프트웨어</a></li>
-					<li><a href="javascript:;">사이트맵</a></li>
-				</ul>
-				<!-- //header_btn -->
-				<div class="family_area clear">
-					<div class="family">
-						<a href="javascript:;">FAMILY SITE</a>
-						<ul class="family-site">
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">사이언스올</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">한국과학창의재단</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">교육기부</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">창의인성교육넷</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">사이언스타임즈</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">PMS(사업관리)</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">과학기술인재진로지원센터</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">과학기술백두대간</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">ODIY</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">무한상상실</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">STEAM</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">메이크올</a></li>
-						</ul>			
-					</div>
-				</div>
-				<!-- //family_area -->
-				<a class="btn_close">닫기</a>
-			</div>
-			<!-- //mob_sliding -->			
-			<div class="search_area">
-				<a href="javascript:;" class="btn_search">SEARCH</a>
-				<form class="srch_form">
-					<fieldset>
-						<legend class="none">검색폼</legend>
-						<ul class="srch_cont">
-							<li>
-								<input type="text" title="검색어" placeholder="검색어를 입력하세요">
-								<button type="button" class="btn_zoom">검색</button>
-							</li>
-							<li>
-								<button class="btn_wirernd" type="button">#이수증출력</button>
-								<button class="btn_wirernd" type="button">#신규강의</button>
-								<button class="btn_wirernd" type="button">#자주하는질문</button>
-							</li>
-							<li>
-								<a href="javascript:;" class="btn_closesrch">닫기</a>
-							</li>
-						</ul>
-					</fieldset>
-				</form>
-			</div>
-			<!-- //search_area -->
-			<a href="javascript:;" class="btn_home">home</a>
-		</header>
-		<!-- //header -->
-		<div id="container">
-			<div class="underline_wrap">
-				<div class="subtop_wrap">
-					<ul class="location_list">
-						<li><a href="javascript:;" class="home">홈</a></li>
-						<li><a href="javascript:;">연수안내</a>
-							<ul>
-								<li><a href="javascript:;">직무연수</a></li>
-								<li><a href="javascript:;">자율연수</a></li>
-								<li><a href="javascript:;">연수안내</a></li>
-								<li><a href="javascript:;">고객센터</a></li>
-								<li><a href="javascript:;">나의강의실</a></li>
-								<li><a href="javascript:;">연수원소개</a></li>
-							</ul>
-						</li>
-						<li><a href="javascript:;">평가이수기준</a>
-							<ul>
-								<li><a href="javascript:;">연수구분</a></li>
-								<li><a href="javascript:;">연간일정</a></li>
-								<li><a href="javascript:;">연수안내공문</a></li>
-								<li><a href="javascript:;">신청방법</a></li>
-								<li><a href="javascript:;">학습방법</a></li>
-								<li><a href="javascript:;">평가이수기준</a></li>
-							</ul>
-						</li>
+				</li>
+				<li><a href="javascript:;">평가이수기준</a>
+					<ul>
+						<li><a href="javascript:;">연수구분</a></li>
+						<li><a href="javascript:;">연간일정</a></li>
+						<li><a href="javascript:;">연수안내공문</a></li>
+						<li><a href="javascript:;">신청방법</a></li>
+						<li><a href="javascript:;">학습방법</a></li>
+						<li><a href="javascript:;">평가이수기준</a></li>
 					</ul>
-					<!-- //location_list -->
-					<h3 class="tit_page">평가이수기준</h3>
-				</div>
-				<!-- //subtop_wrap -->
-			</div>
-			<!-- //underline_wrap -->
-			<div class="sub_wrap">	
-				<h4 class="tit_task top_5000">직무연수</h4>
-				<div class="schedule_info"></div>
-				<div class="table_wrap">
-					<table class="schedule_tbl standard_tbl">
-						<caption>평가이수기준 상세보기</caption>
-						<colgroup>
-							<col style="width:10%;">
-							<col style="width:15%;">
-							<col style="width:12%;">
-							<col style="width:19%;">
-							<col style="width:15%;">
-							<col style="width:10%;">
-							<col style="width:19%;">
-						</colgroup>
-						<thead>
-							<tr>
-								<th scope="col">학점</th>
-								<th scope="col" colspan="2">평가구분</th>
-								<th scope="col">평가유형</th>
-								<th scope="col">평가횟수</th>
-								<th scope="col">배점</th>
-								<th scope="col">이수기준</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td rowspan="2">1학점</td>
-								<td rowspan="2">온라인평가<br>(100%)</td>
-								<td>시험</td>
-								<td>객관식 10문항</td>
-								<td>1회</td>
-								<td>100점</td>
-								<td rowspan="3">총점 60점 이상 & <br>진도율 90% 이상</td>
-							</tr>
-							<tr>
-								<td>과정진도</td>
-								<td>진도율 90% 이상 시</td>
-								<td>연수 종료 후</td>
-								<td class="brdr_right">0점</td>
-							</tr>
-							<tr>
-								<td colspan="5">합격</td>
-								<td class="brdr_right">100점</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<!-- //table_wrap -->
-				<h5 class="tit_guide">이수증 발급</h5>
-				<ul class="guide_list">
-					<li>- 이수증은 온라인 발급을 원칙으로 하며, 온라인 상의 이수증이 원본의 효력을 갖습니다.</li>
-					<li>- 나의강의실 &gt; 연수이력 메뉴에서  확인이 가능합니다.</li>
-					<li>- 이수증 발급은 연수종료 후, 10일 후부터 발급이 가능합니다.</li>
-				</ul>
-				<h5 class="tit_guide">연수결과 통보</h5>
-				<ul class="guide_list">
-					<li>- 성적처리 후 이수번호를 발급하여 각 시도교육청에 이수자명단을 통보합니다. (연수종료 후, 10일 이내)</li>
-				</ul>
-				<h5 class="tit_guide">NEIS 등재절차</h5>
-				<ul class="guide_list">
-					<li>- NEIS 등재는 각 시도교육청 담당자가 직접 진행합니다. 따라서 NEIS 등재 관련 문의는 소속 교육청으로 문의하여 주시기 바랍니다.</li>
-					<li>- 단, 서울, 부산(사립교원) 지역은 개인등재를 기본으로 합니다.</li>
-				</ul>
-				<h4 class="tit_task top_5030">자율연수</h4>
-				<h5 class="tit_guide">자율연수란?</h5>
-				<p class="guide_txt">
-					교원의 직무능력 향상 및 인문 · 교양 분야에 대한 다양한 지적 욕구를 충족하기 위한 연수로써, 시험 및 평가 없이 자유롭게 수강이 가능한 연수입니다.<br>(진도 90%이상 학습 시 수료증이 발급되며, 수료증은 연수 종료 익일 출력 가능합니다.)
-				</p>
-				<div class="guide_caution">
-					<h6 class="tit_caution">※ 유의사항</h6>
-					<ul class="guidecaution_list">
-						<li class="em">- 자율연수는 학점인정 및 NEIS 등록이 되지 않습니다.</li>
-						<li>- 자유롭게 여러 강좌 중복 수강 가능 (자율연수는 학점이 제공되지 않습니다.)</li>
-						<li>- 시험 및 평가 없이, 진도 90% 이상 학습 시 수료증 발급 (이수증 발급처리 안됨)</li>
-						<li>- 신청기간 제한 없이 결제 후 바로 수강 가능</li>
-					</ul>
-				</div>
-				<!-- //guide_caution -->
-			</div>
-			<!-- //sub_wrap -->
-		</div>
-		<!-- //container -->		
-		<footer id="footer">
-			<ul class="term_list clear">
-				<li><a href="javascript:;">서비스이용약관</a></li>
-				<li><a href="javascript:;">영상정보처리기기운영·관리방침 </a></li>
-				<li><a href="javascript:;">지적재산보호 </a></li>
-				<li><a href="javascript:;">개인정보처리방침</a></li>
-				<li><a href="javascript:;">이메일무단수집거부</a></li>
-				<li><a href="javascript:;">찾아오시는 길</a></li>
+				</li>
 			</ul>
-			<address>
-				서울시 강남구 선릉로 602(삼성동 삼릉빌딩)   
-				<span class="brline">
-					<span class="num">대표전화 : 02-559-3972</span>
-					<span class="num">팩스 : 02-552-2355</span>
-				</span>
-			</address>
-			<p class="copyright">Copyright &copy; KOFAC. All Rights Reserved. Since 2013</p>			
-		</footer>
-		<p class="totop"><a href="javascript:;">TOP</a></p>
-		<!-- //totop -->
+			<!-- //location_list -->
+			<h3 class="tit_page">평가이수기준</h3>
+		</div>
+		<!-- //subtop_wrap -->
 	</div>
-	<!-- //wrap -->
+	<!-- //underline_wrap -->
+	<div class="sub_wrap">	
+		<div class="table_wrap">
+			<table class="schedule_tbl standard_tbl">
+				<caption>평가이수기준<span>직무연수 자율연수 평가이수기준 상세보기</span></caption>
+				<colgroup>
+					<col style="width:17%;">
+					<col style="width:17%;">
+					<col style="width:17%;">
+					<col style="width:14%;">
+					<col style="width:10%;">
+					<col style="width:25%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">연수종별</th>
+						<th scope="col">연수유형</th>
+						<th scope="col">평가방법</th>
+						<th scope="col">평가항목</th>
+						<th scope="col">배점</th>
+						<th scope="col">이수(수료)기준</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="5">직무연수</td>
+						<td rowspan="2">종합연수</td>
+						<td rowspan="2">오프라인</td>
+						<td>출석률</td>
+						<td>-</td>
+						<td rowspan="2">
+							출석률 80% 이상<br>
+							(&amp;&nbsp;총점 60점 이상)
+						</td>
+					</tr>
+					<tr>
+						<td>(과제)</td>
+						<td class="brdr_right">(100)</td>			
+					</tr>
+					<tr>
+						<td rowspan="3">원격연수</td>
+						<td rowspan="3">온라인</td>
+						<td>진도율</td>
+						<td>-</td>
+						<td rowspan="3">
+							진도율 90% 이상<br>
+							&amp;&nbsp;총점 60점 이상<br>
+							※&nbsp;시험은 10문항 1회 실시
+						</td>
+					</tr>
+					<tr>
+						<td>과제</td>
+						<td class="brdr_right">40</td>
+					</tr>
+					<tr>
+						<td>시험</td>
+						<td class="brdr_right">60</td>
+					</tr>
+					<tr>
+						<td rowspan="2">자율연수</td>
+						<td>종합연수</td>
+						<td>오프라인</td>
+						<td>출석률</td>
+						<td>-</td>
+						<td>출석률 80% 이상</td>
+					</tr>
+					<tr>
+						<td>원격연수</td>
+						<td>온라인</td>
+						<td>진도율</td>
+						<td>-</td>
+						<td>진도율 90% 이상</td>
+					</tr>
+			
+				</tbody>
+			</table>
+		</div>
+		<!-- //table_wrap -->
+		<div class="guide_caution">
+			<h6 class="tit_caution">※ 유의사항</h6>
+			
+			<ul class="guidecaution_list">
+				<li>- 평가항목과 배점은 연수과정에 따라 상이할 수 있습니다.</li>
+				<li>- 60시간(4학점) 이상의 연수는 연수성적분포 조견표에 의한 상대평가(80~100점)를 실시합니다.</li>
+				<li>- 직무연수는 이수증이 발급되며, 자율연수는 수료증이 발급됩니다.</li>
+				<li>- 이수증(수료증)은 온라인 발급을 원칙으로 하며, 온라인 발급된 이수증(수료증)은 원본의 효력을 갖습니다.</li>
+				<li>- [나의강의실 &gt; 연수이력]에서 이수증(수료증)을 확인할 수 있습니다.</li>
+				<li>- 이수증은 연수 종료 후 10일 후부터 발급이 가능합니다.</li>
+				<li>- 직무연수 종료 후 10일 이내 각 시도교육청에 연수결과(이수자명단)를 일괄 통보합니다.</li>
+				<li>- 직무연수 결과의 NEIS 등재는 각 시도교육청에서 수행합니다.(일부 지역은 교원 직접 수행)</li>
+				<li class="em">- 자율연수 결과는 NEIS 등재가 되지 않습니다.</li>
+			</ul>
+		</div>
+		<!-- //guide_caution -->
+	</div>
+	<!-- //sub_wrap -->
+</div>
 
-<!-- jQuery library -->
-<script src="../js/jquery-1.12.4.min.js"></script>
-<script src="../js/kofac_common.js"></script>
 
-</body>
-</html>
+<?php include "../layout/footer.html" ?>

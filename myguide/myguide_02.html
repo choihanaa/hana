@@ -1,476 +1,1040 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-	<title> kofac </title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<meta charset="utf-8" />
-	<link rel="stylesheet" href="../css/swiper.min.css">
-	<link rel="stylesheet" href="../css/kofac_common.css" />
-</head>
-<body>
-<ul class="skipnavi">
-	<li><a href="#container">본문내용</a></li>
-</ul>
-	<div id="wrap">
-		<header id="header">	
-			<h1><a href="javascript:;">한국과학창의재단 종합·원격 연수원에 오신 것을 환영합니다</a></h1>
-			<p class="mo_callmenu">
-				<a href="javascript:;" >모바일 메뉴 부르기/닫기</a>
-			</p>
-			<div class="mob_slidingbg"></div>
-			<div class="mob_sliding">
-				<ul class="util clear">
-					<li class="home_w"><button type="button" class="btn_home_w">home</button></li>
-					<li class="login">
-						<!-- <a href="javascript:;"><span class="ic"></span>LOGIN</a> -->
-						<p class="after_login">홍길동님, 안녕하세요<span class="ic"></span></p>					<!-- login 후 -->
-					</li>
-					<li class="join">
-						<a href="javascript:;">JOIN</a>
-						<!-- <a href="javascript:;">logout</a> -->					<!-- login 후 -->
-					</li>
-					<li class="link"><a href="javascript:;" class="btn_wirernd"><span class="ic"></span>연간연수일정</a></li>
-				</ul>
-				<!-- //_util -->
-				<nav class="gnb_wrap">
-					<div class="gnb_bg"></div>
-					<h2 class="hdd">메인메뉴</h2>
-					<ul class="gnb">
-						<li>
-							<a href="javascript:;">직무연수</a>
-							<ul>
-								<li><a href="javascript:;">종합연수</a></li>
-								<li><a href="javascript:;">원격연수</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="javascript:;">자율연수</a>
-							<ul>
-								<li><a href="javascript:;">자율연수</a></li>
-							</ul>
-						</li>
-						<li class="on">
-							<a href="javascript:;">연수안내</a>
-							<ul>
-								<li><a href="javascript:;">연수구분</a></li>
-								<li><a href="javascript:;" class="on">연간일정</a></li>
-								<li><a href="javascript:;">연수안내공문</a></li>
-								<li><a href="javascript:;">신청방법</a></li>
-								<li><a href="javascript:;">학습방법</a></li>
-								<li><a href="javascript:;">평가/이수기준</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="javascript:;">고객센터</a>
-							<ul>
-								<li><a href="javascript:;">공지사항</a></li>
-								<li><a href="javascript:;">자주묻는질문</a></li>
-								<li><a href="javascript:;">원격지원요청</a></li>
-								<li><a href="javascript:;">문의게시판</a></li>
-								<li><a href="javascript:;">연수후기</a></li>
-								<li><a href="javascript:;">신규과정제안</a></li>
-								<li><a href="javascript:;">연수자료실</a></li>
-								<li><a href="javascript:;">학습소프트웨어</a></li>
-							</ul>
-						</li>
-						<li class="myroom">
-							<a href="javascript:;">나의강의실</a>
-							<ul >
-								<li><a href="javascript:;">학습현황</a></li>
-								<li><a href="javascript:;">연수이력</a></li>
-								<li><a href="javascript:;">취소이력</a></li>
-								<li><a href="javascript:;">개인정보수정</a></li>
-								<li><a href="javascript:;">나의게시글</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="javascript:;">연수원소개</a>
-							<ul>
-								<li><a href="javascript:;">인사말</a></li>
-								<li><a href="javascript:;">설립목적</a></li>
-								<li><a href="javascript:;">인가서</a></li>
-								<li><a href="javascript:;">연수원규칙</a></li>
-								<li><a href="javascript:;">조직도</a></li>
-							</ul>
-						</li>
+<?php include "../layout/header.html" ?>
+
+
+<div id="container">
+	<div class="underline_wrap">
+		<div class="subtop_wrap">
+			<ul class="location_list">
+				<li><a href="javascript:;" class="home">홈</a></li>
+				<li><a href="javascript:;">연수안내</a>
+					<ul>
+						<li><a href="javascript:;">직무연수</a></li>
+						<li><a href="javascript:;">자율연수</a></li>
+						<li><a href="javascript:;">연수안내</a></li>
+						<li><a href="javascript:;">고객센터</a></li>
+						<li><a href="javascript:;">나의강의실</a></li>
+						<li><a href="javascript:;">연수원소개</a></li>
 					</ul>
-				</nav>
-				<!-- //gnb_wrap -->	
-				<ul class="header_btn clear">
-					<li><a href="javascript:;">원격지원센터</a></li>
-					<li><a href="javascript:;">찾아오시는 길</a></li>
-					<li><a href="javascript:;">학습소프트웨어</a></li>
-					<li><a href="javascript:;">사이트맵</a></li>
-				</ul>
-				<!-- //header_btn -->
-				<div class="family_area clear">
-					<div class="family">
-						<a href="javascript:;">FAMILY SITE</a>
-						<ul class="family-site">
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">사이언스올</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">한국과학창의재단</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">교육기부</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">창의인성교육넷</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">사이언스타임즈</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">PMS(사업관리)</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">과학기술인재진로지원센터</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">과학기술백두대간</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">ODIY</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">무한상상실</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">STEAM</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">메이크올</a></li>
-						</ul>			
-					</div>
-				</div>
-				<!-- //family_area -->
-				<a class="btn_close">닫기</a>
-			</div>
-			<!-- //mob_sliding -->			
-			<div class="search_area">
-				<a href="javascript:;" class="btn_search">SEARCH</a>
-				<form class="srch_form">
-					<fieldset>
-						<legend class="none">검색폼</legend>
-						<ul class="srch_cont">
-							<li>
-								<input type="text" title="검색어" placeholder="검색어를 입력하세요">
-								<button type="button" class="btn_zoom">검색</button>
-							</li>
-							<li>
-								<button class="btn_wirernd" type="button">#이수증출력</button>
-								<button class="btn_wirernd" type="button">#신규강의</button>
-								<button class="btn_wirernd" type="button">#자주하는질문</button>
-							</li>
-							<li>
-								<a href="javascript:;" class="btn_closesrch">닫기</a>
-							</li>
-						</ul>
-					</fieldset>
-				</form>
-			</div>
-			<!-- //search_area -->
-			<a href="javascript:;" class="btn_home">home</a>
-		</header>
-		<!-- //header -->
-		<div id="container">
-			<div class="underline_wrap">
-				<div class="subtop_wrap">
-					<ul class="location_list">
-						<li><a href="javascript:;" class="home">홈</a></li>
-						<li><a href="javascript:;">연수안내</a>
-							<ul>
-								<li><a href="javascript:;">직무연수</a></li>
-								<li><a href="javascript:;">자율연수</a></li>
-								<li><a href="javascript:;">연수안내</a></li>
-								<li><a href="javascript:;">고객센터</a></li>
-								<li><a href="javascript:;">나의강의실</a></li>
-								<li><a href="javascript:;">연수원소개</a></li>
-							</ul>
-						</li>
-						<li><a href="javascript:;">연간일정</a>
-							<ul>
-								<li><a href="javascript:;">연수구분</a></li>
-								<li><a href="javascript:;">연간일정</a></li>
-								<li><a href="javascript:;">연수안내공문</a></li>
-								<li><a href="javascript:;">신청방법</a></li>
-								<li><a href="javascript:;">학습방법</a></li>
-								<li><a href="javascript:;">평가이수기준</a></li>
-							</ul>
-						</li>
+				</li>
+				<li><a href="javascript:;">연간일정</a>
+					<ul>
+						<li><a href="javascript:;">연수구분</a></li>
+						<li><a href="javascript:;">연간일정</a></li>
+						<li><a href="javascript:;">연수안내공문</a></li>
+						<li><a href="javascript:;">신청방법</a></li>
+						<li><a href="javascript:;">학습방법</a></li>
+						<li><a href="javascript:;">평가이수기준</a></li>
 					</ul>
-					<!-- //location_list -->
-					<h3 class="tit_page">연간일정</h3>
-				</div>
-				<!-- //subtop_wrap -->
-			</div>
-			<!-- //underline_wrap -->
-			<div class="sub_wrap">	
-				<h4 class="tit_task top_5000">원격연수 과정별 운영일정</h4>
-				<div class="schedule_info">
-					<select title="년도 선택">
-						<option value="">2020년도</option>
-					</select>
-					<button type="button" class="btn_redwire"><span class="ic_pdf"></span>PDF 버전 다운로드</button>
-				</div>
-				<div class="table_wrap">
-					<table class="schedule_tbl">
-						<caption>연수과정명의 월별 1,2차 운영기수를 정리한 표</caption>
-						<colgroup>
-							<col style="width:32.5%;">
-							<col style="width:4.5%;">
-							<col style="width:4.5%;">
-							<col style="width:4.5%;">
-							<col style="width:4.5%;">
-							<col style="width:4.5%;">
-							<col style="width:4.5%;">
-							<col style="width:4.5%;">
-							<col style="width:4.5%;">
-							<col style="width:4.5%;">
-							<col style="width:4.5%;">
-							<col style="width:4.5%;">
-							<col style="width:4.5%;">
-							<col style="width:4.5%;">
-							<col style="width:4.5%;">
-							<col style="width:4.5%;">
-						</colgroup>
-						<thead>
-							<tr>
-								<th scope="col" rowspan="2">연수과정명</th>
-								<th scope="col">3월</th>
-								<th scope="col" colspan="2">4월</th>
-								<th scope="col" colspan="2">5월</th>
-								<th scope="col" colspan="2">6월</th>
-								<th scope="col" colspan="2">7월</th>
-								<th scope="col" colspan="2">9월</th>
-								<th scope="col" colspan="2">10월</th>
-								<th scope="col" colspan="2">11월</th>
-							</tr>
-							<tr>
-								<th scope="col">1차</th>
-								<th scope="col">1차</th>
-								<th scope="col">2차</th>
-								<th scope="col">1차</th>
-								<th scope="col">2차</th>
-								<th scope="col">1차</th>
-								<th scope="col">2차</th>
-								<th scope="col">1차</th>
-								<th scope="col">2차</th>
-								<th scope="col">1차</th>
-								<th scope="col">2차</th>
-								<th scope="col">1차</th>
-								<th scope="col">2차</th>
-								<th scope="col">1차</th>
-								<th scope="col">2차</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th scope="row">교실 속 STEAM 교육 입문과정 (초등)</th>
-								<td></td><td>1기</td><td>2기</td><td>3기</td><td>4기</td><td>5기</td><td>6기</td><td>7기</td>
-								<td>8기</td><td>9기</td><td>10기</td><td>11기</td><td>12기</td><td>13기</td><td>14기</td>
-							</tr>
-							<tr>
-								<th scope="row">교실 속 STEAM 교육 입문과정 (중등)</th>
-								<td></td><td>1기</td><td>2기</td><td>3기</td><td>4기</td><td>5기</td><td>6기</td><td>7기</td>
-								<td>8기</td><td>9기</td><td>10기</td><td>11기</td><td>12기</td><td>13기</td><td>14기</td>
-							</tr>
-							<tr>
-								<th scope="row">수업 개선을 위한 STEAM 입문과정 (고교)</th>
-								<td></td><td>1기</td><td>2기</td><td>3기</td><td>4기</td><td>5기</td><td>6기</td><td>7기</td>
-								<td>8기</td><td>9기</td><td>10기</td><td>11기</td><td>12기</td><td>13기</td><td>14기</td>
-							</tr>
-							<tr>
-								<th scope="row">수업 개선을 위한 융합인재교육 (STEAM) 입문과정 초등</th>
-								<td>1기</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-								<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-							</tr>
-							<tr>
-								<th scope="row">SW교육 쉽게 이해하기</th>
-								<td>1기</td><td>2기</td><td>3기</td><td>4기</td><td>5기</td><td>6기</td><td>7기</td><td>8기</td>
-								<td>9기</td><td>10기</td><td>11기</td><td>12기</td><td>13기</td><td>14기</td><td>15기</td>
-							</tr>
-							<tr>
-								<th scope="row">수업으로 通하는 SW교육 - 초등</th>
-								<td>1기</td><td>2기</td><td>3기</td><td>4기</td><td>5기</td><td>6기</td><td>7기</td><td>8기</td>
-								<td>9기</td><td>10기</td><td>11기</td><td>12기</td><td>13기</td><td>14기</td><td>15기</td>
-							</tr>
-							<tr>
-								<th scope="row">수업으로 通하는 SW교육 - 중학교 정보</th>
-								<td>1기</td><td>2기</td><td>3기</td><td>4기</td><td>5기</td><td>6기</td><td>7기</td><td>8기</td>
-								<td>9기</td><td>10기</td><td>11기</td><td>12기</td><td>13기</td><td>14기</td><td>15기</td>
-							</tr>
-							<tr>
-								<th scope="row">지능정보사회 핵심기술을 활용한 창의교육</th>
-								<td>1기</td><td>2기</td><td>3기</td><td>4기</td><td>5기</td><td>6기</td><td>7기</td><td>8기</td>
-								<td>9기</td><td>10기</td><td>11기</td><td>12기</td><td>13기</td><td>14기</td><td>15기</td>
-							</tr>
-							<tr>
-								<th scope="row">컴퓨팅 사고력을 통한 창의적 문제 해결하기</th>
-								<td>1기</td><td>2기</td><td>3기</td><td>4기</td><td>5기</td><td>6기</td><td>7기</td><td>8기</td>
-								<td>9기</td><td>10기</td><td>11기</td><td>12기</td><td>13기</td><td>14기</td><td>15기</td>
-							</tr>
-							<tr>
-								<th scope="row">유·초등 미래형 창의교육의 이론과 실제</th>
-								<td>1기</td><td>2기</td><td>3기</td><td>4기</td><td>5기</td><td>6기</td><td>7기</td><td>8기</td>
-								<td>9기</td><td>10기</td><td>11기</td><td>12기</td><td>13기</td><td>14기</td><td>15기</td>
-							</tr>
-							<tr>
-								<th scope="row">중등 미래형 창의교육의 이론과 실제</th>
-								<td>1기</td><td>2기</td><td>3기</td><td>4기</td><td>5기</td><td>6기</td><td>7기</td><td>8기</td>
-								<td>9기</td><td>10기</td><td>11기</td><td>12기</td><td>13기</td><td>14기</td><td>15기</td>
-							</tr>
-							<tr>
-								<th scope="row">미래 창의교육 플러그드 수업모형의 이해와 실제</th>
-								<td>1기</td><td>2기</td><td>3기</td><td>4기</td><td>5기</td><td>6기</td><td>7기</td><td>8기</td>
-								<td>9기</td><td>10기</td><td>11기</td><td>12기</td><td>13기</td><td>14기</td><td>15기</td>
-							</tr>
-							<tr>
-								<th scope="row">거꾸로 하는 문제중심학습(FPBL) 창의교육 실천 역량 강화</th>
-								<td>1기</td><td>2기</td><td>3기</td><td>4기</td><td>5기</td><td>6기</td><td>7기</td><td>8기</td>
-								<td>9기</td><td>10기</td><td>11기</td><td>12기</td><td>13기</td><td>14기</td><td>15기</td>
-							</tr>
-							<tr>
-								<th scope="row">사례로 들여다보는 ESD 실천이야기 (초등)</th>
-								<td>1기</td><td>2기</td><td>3기</td><td>4기</td><td>5기</td><td>6기</td><td></td><td></td>
-								<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-							</tr>
-							<tr>
-								<th scope="row">사례로 들여다보는 ESD 실천이야기 (중등)</th>
-								<td>1기</td><td>2기</td><td>3기</td><td>4기</td><td>5기</td><td>6기</td><td>7기</td><td>8기</td>
-								<td>9기</td><td>10기</td><td>11기</td><td>12기</td><td>13기</td><td>14기</td><td>15기</td>
-							</tr>
-							<tr>
-								<th scope="row">생활과학교실 강사를 위한 수업 가이드</th>
-								<td colspan="15">3.24 ~ 12.7 기간 지속 운영 (자율연수)</td>
-							</tr>
-							<tr>
-								<th scope="row">하브루타 교수법 온라인 프로그램</th>
-								<td colspan="15">3.24 ~ 12.7 기간 지속 운영 (자율연수)</td>
-							</tr>
-							<tr>
-								<th scope="row">대학생 교육기부자 기본역량 강화 과정</th>
-								<td colspan="15">3.24 ~ 12.7 기간 지속 운영 (자율연수)</td>
-							</tr>
-						</tbody>
-					</table>	
-				</div>
-				<!-- //table_wrap -->
-				
-				<h4 class="tit_task top_5030">원격연수 월/차수별 운영기간</h4>
-				<table class="schedule_tbl thbold">
+				</li>
+			</ul>
+			<!-- //location_list -->
+			<h3 class="tit_page">연간일정</h3>
+		</div>
+		<!-- //subtop_wrap -->
+	</div>
+	<!-- //underline_wrap -->
+	<div class="sub_wrap">
+		<div style="text-align:center; margin-top:50px;">
+			<img src="/resources/science/img/ico_joinarr1.png" id="before" onclick="before()">					
+			<h4 class="tit_task" style="padding: 0 5px; display:inline-block;"><span id="year"></span> 원격연수 과정별 운영일정</h4>
+			<img src="/resources/science/img/ico_joinarr.png" id="after" onclick="after()">	
+		</div>	
+		
+		<div id="tbl_2021">
+			<div class="schedule_info">
+				<button type="button" class="btn_redwire" style="margin-bottom:25px;"><span class="ic_pdf"></span><a href="http://eti.kofac.re.kr/BizPlatform/calendardown/Calendar2021.pdf" target="_blank">PDF 버전 다운로드</a></button>
+			</div>				
+			<div class="table_wrap">
+				<table class="schedule_tbl">
+					<caption>연수과정 운영기수<span>연수과정명의 월별 1,2차 운영기수를 정리한 표</span></caption>
 					<colgroup>
-						<col style="width:15%">
-						<col style="width:15%">
-						<col style="width:35%">
-						<col style="width:35%">
+						<col style="width:32%;">
+						<col style="width:4%;">
+						<col style="width:4%;">
+						<col style="width:4%;">
+						<col style="width:4%;">
+						<col style="width:4%;">
+						<col style="width:4%;">
+						<col style="width:4%;">
+						<col style="width:4%;">
+						<col style="width:4%;">
+						<col style="width:4%;">
+						<col style="width:4%;">
+						<col style="width:4%;">
+						<col style="width:4%;">
+						<col style="width:4%;">
+						<col style="width:4%;">
+						<col style="width:4%;">
+						<col style="width:4%;">
 					</colgroup>
 					<thead>
 						<tr>
-							<th scope="col" colspan="2">구분</th>
-							<th scope="col" rowspan="2">신청 기간 (8일)</th>
-							<th scope="col" rowspan="2">연수 기간 (21일)</th>
+							<th scope="col" rowspan="2">연수과정명</th>
+							<th scope="col">2월</th>
+							<th scope="col" colspan="2">3월</th>
+							<th scope="col" colspan="2">4월</th>
+							<th scope="col" colspan="2">5월</th>
+							<th scope="col" colspan="2">6월</th>
+							<th scope="col" colspan="2">7월</th>
+							<th scope="col" colspan="2">9월</th>
+							<th scope="col" colspan="2">10월</th>
+							<th scope="col" colspan="2">11월</th>
 						</tr>
 						<tr>
-							<th scope="col">월</th>
-							<th scope="col" class="brdr_right">차수</th>
+							<th scope="col">1차</th>
+							<th scope="col">1차</th>
+							<th scope="col">2차</th>
+							<th scope="col">1차</th>
+							<th scope="col">2차</th>
+							<th scope="col">1차</th>
+							<th scope="col">2차</th>
+							<th scope="col">1차</th>
+							<th scope="col">2차</th>
+							<th scope="col">1차</th>
+							<th scope="col">2차</th>
+							<th scope="col">1차</th>
+							<th scope="col">2차</th>
+							<th scope="col">1차</th>
+							<th scope="col">2차</th>
+							<th scope="col">1차</th>
+							<th scope="col">2차</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<th scope="row">3월</th>
-							<th scope="row">1차</th>
-							<td>03.16 ~ 03.23</td>
-							<td>03.24 ~ 04.13</td>
+							<th scope="row">초등학교 과학실험 안전교육</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2758" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2759" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2760" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2761" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2762" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2763" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2764" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2765" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2766" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2767" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2768" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2769" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2770" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2771" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2772" target="_blank">15기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2773" target="_blank">16기</a></td>		
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2774" target="_blank">17기</a></td>												
 						</tr>
 						<tr>
-							<th scope="row" rowspan="2">4월</th>
-							<th scope="row">1차</th>
-							<td>04.06 ~ 04.13</td>
-							<td>04.14 ~ 05.04</td>
+							<th scope="row">중학교 과학실험 안전교육</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2724" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2725" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2726" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2727" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2728" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2739" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2730" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2731" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2732" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2733" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2734" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2735" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2736" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2737" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2738" target="_blank">15기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2739" target="_blank">16기</a></td>		
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2740" target="_blank">17기</a></td>		
 						</tr>
 						<tr>
-							<th scope="row">2차</th>
-							<td>04.13 ~ 04.20</td>
-							<td>04.21 ~ 05.11</td>
+							<th scope="row">고등학교 과학실험 안전교육</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2741" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2742" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2743" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2744" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2745" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2746" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2747" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2748" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2749" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2750" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2751" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2752" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2753" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2754" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2755" target="_blank">15기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2756" target="_blank">16기</a></td>		
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2757" target="_blank">17기</a></td>		
 						</tr>
 						<tr>
-							<th scope="row" rowspan="2">5월</th>
-							<th scope="row">1차</th>
-							<td>05.04 ~ 05.11</td>
-							<td>05.12 ~ 06.01</td>
+							<th scope="row">알지오매스 쉽게 따라하기</th>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>								
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2839" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2838" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2840" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2841" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2842" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2843" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2844" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2845" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2846" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2847" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2848" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2849" target="_blank">12기</a></td>		
 						</tr>
 						<tr>
-							<th scope="row">2차</th>
-							<td>05.11 ~ 05.18</td>
-							<td>05.19 ~ 06.08</td>
+							<th scope="row">SW교육 쉽게 이해하기</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2554" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2555" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2556" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2557" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2558" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2559" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2560" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2561" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2562" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2563" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2564" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2565" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2566" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2567" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2568" target="_blank">15기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2569" target="_blank">16기</a></td>		
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2570" target="_blank">17기</a></td>		
+						</tr>								
+						<tr>
+							<th scope="row">수업으로 通하는 SW교육 - 초등</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2571" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2572" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2573" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2574" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2575" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2576" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2577" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2578" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2579" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2580" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2581" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2582" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2583" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2584" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2585" target="_blank">15기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2586" target="_blank">16기</a></td>		
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2587" target="_blank">17기</a></td>	
 						</tr>
 						<tr>
-							<th scope="row" rowspan="2">6월</th>
-							<th scope="row">1차</th>
-							<td>06.01 ~ 06.08</td>
-							<td>06.09 ~ 06.29</td>
+							<th scope="row">수업으로 通하는 SW교육 - 중학교 정보</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2588" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2589" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2590" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2591" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2592" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2593" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2594" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2595" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2596" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2597" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2598" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2599" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2600" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2601" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2602" target="_blank">15기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2603" target="_blank">16기</a></td>		
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2604" target="_blank">17기</a></td>	
 						</tr>
 						<tr>
-							<th scope="row">2차</th>
-							<td>06.08 ~ 06.15</td>
-							<td>06.16 ~ 07.06</td>
+							<th scope="row">지능정보사회 핵심기술을 활용한 창의교육</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2605" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2606" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2607" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2608" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2609" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2610" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2611" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2612" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2613" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2614" target="_blank">10기</a></td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
 						</tr>
 						<tr>
-							<th scope="row" rowspan="2">7월</th>
-							<th scope="row">1차</th>
-							<td>07.06 ~ 07.13</td>
-							<td>07.14 ~ 08.03</td>
+							<th scope="row">컴퓨팅 사고력을 통한 창의적 문제 해결하기</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2615" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2616" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2617" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2618" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2619" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2620" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2621" target="_blank">7기</a></td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
 						</tr>
 						<tr>
-							<th scope="row">2차</th>
-							<td>07.13 ~ 07.20</td>
-							<td>07.21 ~ 08.10</td>
+							<th scope="row">교실 속 STEAM 교육 입문과정 초등</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2622" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2623" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2624" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2625" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2626" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2627" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2628" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2629" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2630" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2631" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2632" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2633" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2634" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2635" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2636" target="_blank">15기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2637" target="_blank">16기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2638" target="_blank">17기</a></td>												
 						</tr>
 						<tr>
-							<th scope="row" rowspan="2">9월</th>
-							<th scope="row">1차</th>
-							<td>08.24 ~ 08.31</td>
-							<td>09.01 ~ 09.21</td>
+							<th scope="row">교실 속 STEAM 교육 입문과정 중학</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2639" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2640" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2641" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2642" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2643" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2644" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2645" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2646" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2647" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2648" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2649" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2650" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2651" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2652" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2653" target="_blank">15기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2654" target="_blank">16기</a></td>		
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2655" target="_blank">17기</a></td>	
 						</tr>
 						<tr>
-							<th scope="row">2차</th>
-							<td>09.07 ~ 09.14</td>
-							<td>09.15 ~ 10.07</td>
+							<th scope="row">유·초등 미래형 창의교육의 이론과 실제</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2656" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2657" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2658" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2659" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2660" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2661" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2662" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2663" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2664" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2665" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2666" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2667" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2668" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2669" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2670" target="_blank">15기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2671" target="_blank">16기</a></td>		
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2672" target="_blank">17기</a></td>	
 						</tr>
 						<tr>
-							<th scope="row" rowspan="2">10월</th>
-							<th scope="row">1차</th>
-							<td>10.05 ~ 10.12</td>
-							<td>10.13 ~ 11.02</td>
+							<th scope="row">중등 미래형 창의교육의 이론과 실제</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2673" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2674" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2675" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2676" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2677" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2678" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2679" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2680" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2681" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2682" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2683" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2684" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2685" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2686" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2687" target="_blank">15기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2688" target="_blank">16기</a></td>		
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2689" target="_blank">17기</a></td>	
 						</tr>
 						<tr>
-							<th scope="row">2차</th>
-							<td>10.12 ~ 10.19</td>
-							<td>10.20 ~ 11.09</td>
+							<th scope="row">미래 창의교육 플러그드 수업모형의 이해와 실제</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2690" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2691" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2692" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2693" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2694" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2695" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2696" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2697" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2698" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2699" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2700" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2701" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2702" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2703" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2704" target="_blank">15기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2705" target="_blank">16기</a></td>		
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2706" target="_blank">17기</a></td>	
 						</tr>
 						<tr>
-							<th scope="row" rowspan="2">11월</th>
-							<th scope="row">1차</th>
-							<td>11.02 ~ 11.09</td>
-							<td>11.10 ~ 11.30</td>
+							<th scope="row">거꾸로 하는 문제중심학습(FPBL) 창의교육 실천 역량 강화</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2707" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2708" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2709" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2710" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2711" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2712" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2713" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2714" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2715" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2716" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2717" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2718" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2719" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2720" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2721" target="_blank">15기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2722" target="_blank">16기</a></td>		
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2723" target="_blank">17기</a></td>	
+						</tr>								
+						<tr>
+							<th scope="row">생활과학교실 강사를 위한 수업 가이드</th>
+							<td colspan="17"><a href="" target="_blank">[자율연수] 2. 15. ~ 12. 27. 기간 지속 운영</a></td>
 						</tr>
 						<tr>
-							<th scope="row">2차</th>
-							<td>11.09 ~ 11.16</td>
-							<td>11.17 ~ 12.07</td>
+							<th scope="row">과학커뮤니케이터 공통역량 강화 교육과정</th>
+							<td colspan="17">"</td>
+						</tr>
+						<tr>
+							<th scope="row">대학생 교육기부자 기본역량 강화 과정</th>
+							<td colspan="17">"</td>
+						</tr>								
+					</tbody>
+				</table>	
+			</div>
+			<!-- //table_wrap -->
+			
+			<h4 class="tit_task top_5030">원격연수 월/차수별 운영기간</h4>
+			<table class="schedule_tbl thbold">
+				<caption>원격연수 운영기간<span>원격연수 월/차수별 운영기간 상세 안내표</span></caption>
+				<colgroup>
+					<col style="width:15%">
+					<col style="width:15%">
+					<col style="width:35%">
+					<col style="width:35%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col" colspan="2">운영 일정</th>
+						<th scope="col" rowspan="2">신청 기간<br>(02.15.부터)</th>
+						<th scope="col" rowspan="2">수강 기간<br>(15차시 기준 21일)</th>
+					</tr>
+					<tr>
+						<th scope="col">월</th>
+						<th scope="col" class="brdr_right">차수</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">2월</th>
+						<th scope="row">1차</th>
+						<td>~ 02.22.</td>
+						<td>02.23. ~ 03.15.</td>
+					</tr>
+					<tr>
+						<th scope="row" rowspan="2">3월</th>
+						<th scope="row">1차</th>
+						<td>~ 03.08.</td>
+						<td>03.09. ~ 03.29.</td>
+					</tr>
+					<tr>
+						<th scope="row">2차</th>
+						<td>~ 03.15.</td>
+						<td>03.16. ~ 04.05.</td>
+					</tr>
+					<tr>
+						<th scope="row" rowspan="2">4월</th>
+						<th scope="row">1차</th>
+						<td>~ 04.05.</td>
+						<td>04.06. ~ 04.26.</td>
+					</tr>
+					<tr>
+						<th scope="row">2차</th>
+						<td>~ 04.12.</td>
+						<td>04.13. ~ 05.03.</td>
+					</tr>
+					<tr>
+						<th scope="row" rowspan="2">5월</th>
+						<th scope="row">1차</th>
+						<td>~ 05.03.</td>
+						<td>05.04. ~ 05.24.</td>
+					</tr>
+					<tr>
+						<th scope="row">2차</th>
+						<td>~ 05.10.</td>
+						<td>05.11. ~ 05.31.</td>
+					</tr>
+					<tr>
+						<th scope="row" rowspan="2">6월</th>
+						<th scope="row">1차</th>
+						<td>~ 05.31.</td>
+						<td>06.01. ~ 06.21.</td>
+					</tr>
+					<tr>
+						<th scope="row">2차</th>
+						<td>~ 06.07.</td>
+						<td>06.08. ~ 06.28.</td>
+					</tr>
+					<tr>
+						<th scope="row" rowspan="2">7월</th>
+						<th scope="row">1차</th>
+						<td>~ 07.05.</td>
+						<td>07.06. ~ 07.26.</td>
+					</tr>
+					<tr>
+						<th scope="row">2차</th>
+						<td>~ 07.12.</td>
+						<td>07.13. ~ 08.02.</td>
+					</tr>
+					<tr>
+						<th scope="row" rowspan="2">9월</th>
+						<th scope="row">1차</th>
+						<td>~ 09.06.</td>
+						<td>09.07. ~ 09.27.</td>
+					</tr>
+					<tr>
+						<th scope="row">2차</th>
+						<td>~ 09.13.</td>
+						<td>09.14. ~ 10.04.</td>
+					</tr>
+					<tr>
+						<th scope="row" rowspan="2">10월</th>
+						<th scope="row">1차</th>
+						<td>~ 10.04.</td>
+						<td>10.05. ~ 10.25.</td>
+					</tr>
+					<tr>
+						<th scope="row">2차</th>
+						<td>~ 10.11.</td>
+						<td>10.12. ~ 11.01.</td>
+					</tr>
+					<tr>
+						<th scope="row" rowspan="2">11월</th>
+						<th scope="row">1차</th>
+						<td>~ 11.01.</td>
+						<td>11.02. ~ 11.22.</td>
+					</tr>
+					<tr>
+						<th scope="row">2차</th>
+						<td>~ 11.08.</td>
+						<td>11.09. ~ 11.29.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="tbl_2020" style="display:none;">
+			<div class="schedule_info">
+				<button type="button" class="btn_redwire" style="margin-bottom:25px;"><span class="ic_pdf"></span><a href="http://eti.kofac.re.kr/BizPlatform/calendardown/Calendar2020_A3.pdf" target="_blank">PDF 버전 다운로드</a></button>
+			</div>
+			<div class="table_wrap">
+				<table class="schedule_tbl">
+					<caption>연수과정 운영기수<span>연수과정명의 월별 1,2차 운영기수를 정리한 표</span></caption>
+					<colgroup>
+						<col style="width:32.5%;">
+						<col style="width:4.5%;">
+						<col style="width:4.5%;">
+						<col style="width:4.5%;">
+						<col style="width:4.5%;">
+						<col style="width:4.5%;">
+						<col style="width:4.5%;">
+						<col style="width:4.5%;">
+						<col style="width:4.5%;">
+						<col style="width:4.5%;">
+						<col style="width:4.5%;">
+						<col style="width:4.5%;">
+						<col style="width:4.5%;">
+						<col style="width:4.5%;">
+						<col style="width:4.5%;">
+						<col style="width:4.5%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">연수과정명</th>
+							<th scope="col">3월</th>
+							<th scope="col" colspan="2">4월</th>
+							<th scope="col" colspan="2">5월</th>
+							<th scope="col" colspan="2">6월</th>
+							<th scope="col" colspan="2">7월</th>
+							<th scope="col" colspan="2">9월</th>
+							<th scope="col" colspan="2">10월</th>
+							<th scope="col" colspan="2">11월</th>
+						</tr>
+						<tr>
+							<th scope="col">1차</th>
+							<th scope="col">1차</th>
+							<th scope="col">2차</th>
+							<th scope="col">1차</th>
+							<th scope="col">2차</th>
+							<th scope="col">1차</th>
+							<th scope="col">2차</th>
+							<th scope="col">1차</th>
+							<th scope="col">2차</th>
+							<th scope="col">1차</th>
+							<th scope="col">2차</th>
+							<th scope="col">1차</th>
+							<th scope="col">2차</th>
+							<th scope="col">1차</th>
+							<th scope="col">2차</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">프로젝트형 통계수업</th>
+							<td>-</td>
+							<td>-</td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2333" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2334" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2335" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2336" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2337" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2338" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2339" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2340" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2341" target="_blank">9기</a></td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>		
+						<tr>
+							<th scope="row">교실 속 STEAM 교육 입문과정 (초등)</th>
+							<td>-</td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2319" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2320" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2321" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2322" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2323" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2324" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2325" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2326" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2327" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2328" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2329" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2330" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2331" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2332" target="_blank">14기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">교실 속 STEAM 교육 입문과정 (중등)</th>
+							<td>-</td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2290" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2291" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2292" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2293" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2294" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2295" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2296" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2297" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2298" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2299" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2300" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2301" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2302" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2303" target="_blank">14기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">수업 개선을 위한 STEAM 입문과정 (고교)</th>
+							<td>-</td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2164" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2165" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2166" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2167" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2168" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2169" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2170" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2171" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2172" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2173" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2174" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2175" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2176" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2177" target="_blank">14기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">수업 개선을 위한 융합인재교육 (STEAM) 입문과정 초등</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2178" target="_blank">1기</a></td>
+							<td>-</td>
+							<td colspan="13"><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2343" target="_blank">4.13 ~ 12.7 기간 지속 운영 (자율연수)</a></td>
+						</tr>
+						<tr>
+							<th scope="row">SW교육 쉽게 이해하기</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2179" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2180" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2181" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2182" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2183" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2184" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2185" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2186" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2187" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2188" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2189" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2190" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2191" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2192" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2193" target="_blank">15기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">수업으로 通하는 SW교육 - 초등</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2275" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2276" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2277" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2278" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2279" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2280" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2281" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2282" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2283" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2284" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2285" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2286" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2287" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2288" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2289" target="_blank">15기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">수업으로 通하는 SW교육 - 중학교 정보</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2304" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2305" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2306" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2307" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2308" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2309" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2310" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2311" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2312" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2313" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2314" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2315" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2316" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2317" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2318" target="_blank">15기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">지능정보사회 핵심기술을 활용한 창의교육</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2194" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2195" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2196" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2197" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2198" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2199" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2200" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2201" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2202" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2203" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2204" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2409" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2410" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2411" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2412" target="_blank">15기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">컴퓨팅 사고력을 통한 창의적 문제 해결하기</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2205" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2206" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2207" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2208" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2209" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2210" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2211" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2212" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2213" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2214" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2215" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2413" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2414" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2415" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2416" target="_blank">15기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">유·초등 미래형 창의교육의 이론과 실제</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2216" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2217" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2218" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2219" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2220" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2221" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2222" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2223" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2224" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2225" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2226" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2421" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2422" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2423" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2424" target="_blank">15기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">중등 미래형 창의교육의 이론과 실제</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2227" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2228" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2229" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2230" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2231" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2232" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2233" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2234" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2235" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2236" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2237" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2417" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2418" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2419" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2420" target="_blank">15기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">미래 창의교육 플러그드 수업모형의 이해와 실제</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2238" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2239" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2240" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2241" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2242" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2243" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2244" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2245" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2246" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2247" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2248" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2425" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2426" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2427" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2428" target="_blank">15기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">거꾸로 하는 문제중심학습(FPBL) 창의교육 실천 역량 강화</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2249" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2250" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2251" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2252" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2253" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2254" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2255" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2256" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2257" target="_blank">9기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2258" target="_blank">10기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2259" target="_blank">11기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2429" target="_blank">12기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2430" target="_blank">13기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2431" target="_blank">14기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2432" target="_blank">15기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">사례로 들여다보는 ESD 실천이야기 (초등)</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2260" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2261" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2262" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2263" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2264" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2265" target="_blank">6기</a></td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">사례로 들여다보는 ESD 실천이야기 (중등)</th>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2266" target="_blank">1기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2267" target="_blank">2기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2268" target="_blank">3기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2269" target="_blank">4기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2270" target="_blank">5기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2271" target="_blank">6기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2272" target="_blank">7기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2273" target="_blank">8기</a></td>
+							<td><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2274" target="_blank">9기</a></td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">SW교육 역량 강화</th>
+							<td colspan="15"><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2342" target="_blank">4.13 ~ 12.7 기간 지속 운영 (자율연수)</a></td>
+						</tr>
+						<tr>
+							<th scope="row">수업 개선을 위한 융합인재교육(STEAM) 입문과정 (중학)</th>
+							<td colspan="15"><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2344" target="_blank">4.13 ~ 12.7 기간 지속 운영 (자율연수)</a></td>
+						</tr>
+						<tr>
+							<th scope="row">생활과학교실 강사를 위한 수업 가이드</th>
+							<td colspan="15"><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2004" target="_blank">3.24 ~ 12.7 기간 지속 운영 (자율연수)</a></td>
+						</tr>
+						<tr>
+							<th scope="row">하브루타 교수법 온라인 프로그램</th>
+							<td colspan="15"><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2162" target="_blank">3.24 ~ 12.7 기간 지속 운영 (자율연수)</a></td>
+						</tr>
+						<tr>
+							<th scope="row">대학생 교육기부자 기본역량 강화 과정</th>
+							<td colspan="15"><a href="https://lms.kofac.re.kr/front/trainapply/onlineView.do?menuSeq=10408&amp;pageFlag=online&amp;groupSeq=1&amp;courseSeq=2147" target="_blank">3.24 ~ 12.7 기간 지속 운영 (자율연수)</a></td>
+						</tr>
+						<tr>
+							<th scope="row">과학커뮤니케이터 공통역량 강화 교육과정</th>
+							<td colspan="15"><a href="#" target="_blank">9.2 ~ 12.7 기간 지속 운영 (자율연수)</a></td>
 						</tr>
 					</tbody>
-				</table>
+				</table>	
 			</div>
-			<!-- //sub_wrap -->
+			<!-- //table_wrap -->
+			
+			<h4 class="tit_task top_5030">원격연수 월/차수별 운영기간</h4>
+			<table class="schedule_tbl thbold">
+				<caption>원격연수 운영기간<span>원격연수 월/차수별 운영기간 상세 안내표</span></caption>
+				<colgroup>
+					<col style="width:15%">
+					<col style="width:15%">
+					<col style="width:35%">
+					<col style="width:35%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col" colspan="2">구분</th>
+						<th scope="col" rowspan="2">신청 기간</th>
+						<th scope="col" rowspan="2">연수 기간 (21일)</th>
+					</tr>
+					<tr>
+						<th scope="col">월</th>
+						<th scope="col" class="brdr_right">차수</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">3월</th>
+						<th scope="row">1차</th>
+						<td>~ 03.23</td>
+						<td>03.24 ~ 04.13</td>
+					</tr>
+					<tr>
+						<th scope="row" rowspan="2">4월</th>
+						<th scope="row">1차</th>
+						<td>~ 04.13</td>
+						<td>04.14 ~ 05.04</td>
+					</tr>
+					<tr>
+						<th scope="row">2차</th>
+						<td>~ 04.20</td>
+						<td>04.21 ~ 05.11</td>
+					</tr>
+					<tr>
+						<th scope="row" rowspan="2">5월</th>
+						<th scope="row">1차</th>
+						<td>~ 05.11</td>
+						<td>05.12 ~ 06.01</td>
+					</tr>
+					<tr>
+						<th scope="row">2차</th>
+						<td>~ 05.18</td>
+						<td>05.19 ~ 06.08</td>
+					</tr>
+					<tr>
+						<th scope="row" rowspan="2">6월</th>
+						<th scope="row">1차</th>
+						<td>~ 06.08</td>
+						<td>06.09 ~ 06.29</td>
+					</tr>
+					<tr>
+						<th scope="row">2차</th>
+						<td>~ 06.15</td>
+						<td>06.16 ~ 07.06</td>
+					</tr>
+					<tr>
+						<th scope="row" rowspan="2">7월</th>
+						<th scope="row">1차</th>
+						<td>~ 07.13</td>
+						<td>07.14 ~ 08.03</td>
+					</tr>
+					<tr>
+						<th scope="row">2차</th>
+						<td>~ 07.20</td>
+						<td>07.21 ~ 08.10</td>
+					</tr>
+					<tr>
+						<th scope="row" rowspan="2">9월</th>
+						<th scope="row">1차</th>
+						<td>~ 08.31</td>
+						<td>09.01 ~ 09.21</td>
+					</tr>
+					<tr>
+						<th scope="row">2차</th>
+						<td>~ 09.14</td>
+						<td>09.15 ~ 10.07</td>
+					</tr>
+					<tr>
+						<th scope="row" rowspan="2">10월</th>
+						<th scope="row">1차</th>
+						<td>~ 10.12</td>
+						<td>10.13 ~ 11.02</td>
+					</tr>
+					<tr>
+						<th scope="row">2차</th>
+						<td>~ 10.19</td>
+						<td>10.20 ~ 11.09</td>
+					</tr>
+					<tr>
+						<th scope="row" rowspan="2">11월</th>
+						<th scope="row">1차</th>
+						<td>~ 11.09</td>
+						<td>11.10 ~ 11.30</td>
+					</tr>
+					<tr>
+						<th scope="row">2차</th>
+						<td>~ 11.16</td>
+						<td>11.17 ~ 12.07</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
-		<!-- //container -->		
-		<footer id="footer">
-			<ul class="term_list clear">
-				<li><a href="javascript:;">서비스이용약관</a></li>
-				<li><a href="javascript:;">영상정보처리기기운영·관리방침 </a></li>
-				<li><a href="javascript:;">지적재산보호 </a></li>
-				<li><a href="javascript:;">개인정보처리방침</a></li>
-				<li><a href="javascript:;">이메일무단수집거부</a></li>
-				<li><a href="javascript:;">찾아오시는 길</a></li>
-			</ul>
-			<address>
-				서울시 강남구 선릉로 602(삼성동 삼릉빌딩)   
-				<span class="brline">
-					<span class="num">대표전화 : 02-559-3972</span>
-					<span class="num">팩스 : 02-552-2355</span>
-				</span>
-			</address>
-			<p class="copyright">Copyright &copy; KOFAC. All Rights Reserved. Since 2013</p>			
-		</footer>
-		<p class="totop"><a href="javascript:;">TOP</a></p>
-		<!-- //totop -->
 	</div>
-	<!-- //wrap -->
+	<!-- //sub_wrap -->
+</div>
 
-<!-- jQuery library -->
-<script src="../js/jquery-1.12.4.min.js"></script>
-<script src="../js/kofac_common.js"></script>
+<script type="text/javascript">
+	$("#year").text("2021");
+	
+	function btn(){
+		if($("#year").text() == 2021){
+			$("#after").hide();
+			$("#before").show();
+		}else if($("#year").text() == 2020){
+			$("#before").hide();
+			$("#after").show();
+		}
+	}
+	btn();
+	function before() {
+		$("#tbl_" + $("#year").text()).hide();
+		$("#tbl_" + (Number($("#year").text())-1)).show();
+		$("#year").text(Number($("#year").text())-1);
+		btn();
+	}
+	function after() {
+		$("#tbl_" + $("#year").text()).hide();
+		$("#tbl_" + (Number($("#year").text())+1)).show();
+		$("#year").text(Number($("#year").text())+1);
+		btn();
+	}
+</script>	
 
-</body>
-</html>
+
+<?php include "../layout/footer.html" ?>

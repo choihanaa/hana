@@ -736,7 +736,7 @@ input[type=text].daterange {width: 190px; background: url(../img/ico_datepicker.
 .base_tab dt.on a {border:1px solid #4a5157; background:#4a5157; font-weight: 500;color:#fff;}
 .base_tab dd {padding-top: 65px;}
 .base_tab dd.hidetab {display: none;}
-.base_tab dd img {float:left; width:440px; /* border:1px solid #d9dce0; */}
+.base_tab dd img {float:left; width:100%; /* border:1px solid #d9dce0; */}
 .base_tab dd .text_area {float:right; width:calc( 100% - 480px ); padding-right: 6px;}
 .base_tab dd .mo {display: none;}
 .base_tab dd .tit_greeting {line-height:1; font-weight: 500; font-size:24px; color: #005ca1;}
