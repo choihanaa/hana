@@ -1,358 +1,180 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-	<title> kofac </title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<meta charset="utf-8" />
-	<link rel="stylesheet" href="../css/swiper.min.css">
-	<link rel="stylesheet" href="../css/kofac_common.css" />
-</head>
-<body>
-<ul class="skipnavi">
-	<li><a href="#container">본문내용</a></li>
-</ul>
-	<div id="wrap">
-		<header id="header">	
-			<h1><a href="javascript:;">한국과학창의재단 종합·원격 연수원에 오신 것을 환영합니다</a></h1>
-			<p class="mo_callmenu">
-				<a href="javascript:;" >모바일 메뉴 부르기/닫기</a>
-			</p>
-			<div class="mob_slidingbg"></div>
-			<div class="mob_sliding">
-				<ul class="util clear">
-					<li class="home_w"><button type="button" class="btn_home_w">home</button></li>
-					<li class="login">
-						<!-- <a href="javascript:;"><span class="ic"></span>LOGIN</a> -->
-						<p class="after_login">홍길동님, 안녕하세요<span class="ic"></span></p>					<!-- login 후 -->
-					</li>
-					<li class="join">
-						<a href="javascript:;">JOIN</a>
-						<!-- <a href="javascript:;">logout</a> -->					<!-- login 후 -->
-					</li>
-					<li class="link"><a href="javascript:;" class="btn_wirernd"><span class="ic"></span>연간연수일정</a></li>
-				</ul>
-				<!-- //_util -->
-				<nav class="gnb_wrap">
-					<div class="gnb_bg"></div>
-					<h2 class="hdd">메인메뉴</h2>
-					<ul class="gnb">
-						<li>
-							<a href="javascript:;">직무연수</a>
-							<ul>
-								<li><a href="javascript:;">종합연수</a></li>
-								<li><a href="javascript:;">원격연수</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="javascript:;">자율연수</a>
-							<ul>
-								<li><a href="javascript:;">자율연수</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="javascript:;">연수안내</a>
-							<ul>
-								<li><a href="javascript:;">연수구분</a></li>
-								<li><a href="javascript:;">연간일정</a></li>
-								<li><a href="javascript:;">연수안내공문</a></li>
-								<li><a href="javascript:;">신청방법</a></li>
-								<li><a href="javascript:;">학습방법</a></li>
-								<li><a href="javascript:;">평가/이수기준</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="javascript:;">고객센터</a>
-							<ul>
-								<li><a href="javascript:;">공지사항</a></li>
-								<li><a href="javascript:;">자주묻는질문</a></li>
-								<li><a href="javascript:;">원격지원요청</a></li>
-								<li><a href="javascript:;">문의게시판</a></li>
-								<li><a href="javascript:;">연수후기</a></li>
-								<li><a href="javascript:;">신규과정제안</a></li>
-								<li><a href="javascript:;">연수자료실</a></li>
-								<li><a href="javascript:;">학습소프트웨어</a></li>
-							</ul>
-						</li>
-						<li class="myroom">
-							<a href="javascript:;">나의강의실</a>
-							<ul >
-								<li><a href="javascript:;">학습현황</a></li>
-								<li><a href="javascript:;">연수이력</a></li>
-								<li><a href="javascript:;">취소이력</a></li>
-								<li><a href="javascript:;">개인정보수정</a></li>
-								<li><a href="javascript:;">나의게시글</a></li>
-							</ul>
-						</li>
-						<li class="on">
-							<a href="javascript:;">연수원소개</a>
-							<ul>
-								<li><a href="javascript:;">인사말</a></li>
-								<li><a href="javascript:;">설립목적</a></li>
-								<li><a href="javascript:;">인가서</a></li>
-								<li><a href="javascript:;">연수원규칙</a></li>
-								<li><a href="javascript:;" class="on">조직도</a></li>
-							</ul>
-						</li>
+<?php include "../layout/header.html" ?>
+
+
+<div id="container">
+	<div class="underline_wrap">
+		<div class="subtop_wrap">
+			<ul class="location_list">
+				<li><a href="javascript:;" class="home">홈</a></li>
+				<li><a href="javascript:;">연수원소개</a>
+					<ul>
+						<li><a href="javascript:;">직무연수</a></li>
+						<li><a href="javascript:;">자율연수</a></li>
+						<li><a href="javascript:;">연수안내</a></li>
+						<li><a href="javascript:;">고객센터</a></li>
+						<li><a href="javascript:;">나의강의실</a></li>
+						<li><a href="javascript:;">연수원소개</a></li>
 					</ul>
-				</nav>
-				<!-- //gnb_wrap -->	
-				<ul class="header_btn clear">
-					<li><a href="javascript:;">원격지원센터</a></li>
-					<li><a href="javascript:;">찾아오시는 길</a></li>
-					<li><a href="javascript:;">학습소프트웨어</a></li>
-					<li><a href="javascript:;">사이트맵</a></li>
-				</ul>
-				<!-- //header_btn -->
-				<div class="family_area clear">
-					<div class="family">
-						<a href="javascript:;">FAMILY SITE</a>
-						<ul class="family-site">
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">사이언스올</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">한국과학창의재단</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">교육기부</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">창의인성교육넷</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">사이언스타임즈</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">PMS(사업관리)</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">과학기술인재진로지원센터</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">과학기술백두대간</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">ODIY</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">무한상상실</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">STEAM</a></li>
-							<li><a title="새창으로 열림" href="javascript:;" target="_blank">메이크올</a></li>
-						</ul>			
-					</div>
-				</div>
-				<!-- //family_area -->
-				<a class="btn_close">닫기</a>
-			</div>
-			<!-- //mob_sliding -->			
-			<div class="search_area">
-				<a href="javascript:;" class="btn_search">SEARCH</a>
-				<form class="srch_form">
-					<fieldset>
-						<legend class="none">검색폼</legend>
-						<ul class="srch_cont">
-							<li>
-								<input type="text" title="검색어" placeholder="검색어를 입력하세요">
-								<button type="button" class="btn_zoom">검색</button>
-							</li>
-							<li>
-								<button class="btn_wirernd" type="button">#이수증출력</button>
-								<button class="btn_wirernd" type="button">#신규강의</button>
-								<button class="btn_wirernd" type="button">#자주하는질문</button>
-							</li>
-							<li>
-								<a href="javascript:;" class="btn_closesrch">닫기</a>
-							</li>
-						</ul>
-					</fieldset>
-				</form>
-			</div>
-			<!-- //search_area -->
-			<a href="javascript:;" class="btn_home">home</a>
-		</header>
-		<!-- //header -->
-		<div id="container">
-			<div class="underline_wrap">
-				<div class="subtop_wrap">
-					<ul class="location_list">
-						<li><a href="javascript:;" class="home">홈</a></li>
-						<li><a href="javascript:;">연수원소개</a>
-							<ul>
-								<li><a href="javascript:;">직무연수</a></li>
-								<li><a href="javascript:;">자율연수</a></li>
-								<li><a href="javascript:;">연수안내</a></li>
-								<li><a href="javascript:;">고객센터</a></li>
-								<li><a href="javascript:;">나의강의실</a></li>
-								<li><a href="javascript:;">연수원소개</a></li>
-							</ul>
-						</li>
-						<li><a href="javascript:;">조직도</a>
-							<ul>
-								<li><a href="javascript:;">인사말</a></li>
-								<li><a href="javascript:;">설립목적</a></li>
-								<li><a href="javascript:;">인가서</a></li>
-								<li><a href="javascript:;">연수원규칙</a></li>
-								<li><a href="javascript:;">조직도</a></li>
-							</ul>
-						</li>
+				</li>
+				<li><a href="javascript:;">조직도</a>
+					<ul>
+						<li><a href="javascript:;">인사말</a></li>
+						<li><a href="javascript:;">설립목적</a></li>
+						<li><a href="javascript:;">인가서</a></li>
+						<li><a href="javascript:;">연수원규칙</a></li>
+						<li><a href="javascript:;">조직도</a></li>
 					</ul>
-					<!-- //location_list -->
-					<h3 class="tit_page">조직도</h3>
-				</div>
-				<!-- //subtop_wrap -->
-			</div>
-			<!-- //underline_wrap -->
-			<div class="sub_wrap">	
-				<div class="organization_img">
-					<img src="../img/organization_pc.png" class="pc" alt="이사장(이사회) 아래 연수원장이 있고, 그 아래 연수운영위원회, 품질관리위원회가 있고, 또한 그 아래 원격교육연수운영, 연수지원, 연수과정설계 개발 이 있고, 연수과정설계 개발 아래에는 과학문화확산팀, 과학수학교육팀, 창의활동지원팀, SW.AI융합팀 이 있다.">	
-					<div class="schedule_info top-42"></div>
-					<div class="table_wrap mo">
-						<img src="../img/organization_mo.png" width="650" alt="이사장(이사회) 아래 연수원장이 있고, 그 아래 연수운영위원회, 품질관리위원회가 있고, 또한 그 아래 원격교육연수운영, 연수지원, 연수과정설계 개발 이 있고, 연수과정설계 개발 아래에는 과학문화확산팀, 과학수학교육팀, 창의활동지원팀, SW.AI융합팀 이 있다.">
-					</div>
-					
-				</div>
-				<!-- //organization_img -->
-				<div class="schedule_info"></div>
-				<div class="table_wrap">
-					<table class="vertical_tbl organ_short_tbl">
-						<caption>조직원의 성명,직책.담당업무에 관한 정보를 제공하는 표</caption>
-						<colgroup>
-							<col class="organ_col1">
-							<col class="organ_col2">
-							<col class="organ_col3">
-							<col class="organ_col4">
-						</colgroup>
-						<thead>
-							<tr>
-								<th scope="col">파트</th>
-								<th scope="col">성명</th>
-								<th scope="col">전화번호</th>
-								<th scope="col">담당업무</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>총괄</td>
-								<td>진병두</td>
-								<td>02-559-3890</td>
-								<td class="txt_left">·&nbsp;종합·원격교육연수원 업무 총괄</td>
-							</tr>
-							<tr>
-								<td rowspan="5">연수기획·운영</td>
-								<td>이인우</td>
-								<td>02-559-3892</td>
-								<td class="txt_left">
-								<p>·&nbsp;종합·원격교육연수원 평가지표 분석 및 관리</p>
-
-								<p>·&nbsp;종합·원격교육연수원 운영성과 모니터링 및 통계 관리</p>
-					
-								<p>·&nbsp;2021년 종합교육연수원 운영평가 대비 실적 관리 및 정리</p>
-								</td>
-							</tr>
-							<tr>
-								<td>박세만</td>
-								<td>02-559-3895</td>
-								<td class="txt_left">
-								<p>·&nbsp;종합·원격교육연수 연수과정 기획·개발</p>
-					
-								<p>·&nbsp;종합·원격교육연수원 차세대 학습관리시스템(LMS) 구축</p>
-
-								<p>·&nbsp;종합·원격교육연수원 주요 보고문건 대응 및 신규사업 예산 관리</p>
-					
-								<p>·&nbsp;2021년 종합교육연수원 운영평가 대응</p>
-								</td>
-							</tr>
-							<tr>
-								<td>민영경</td>
-								<td>02-559-3891</td>
-								<td class="txt_left">
-								<p>·&nbsp;원격교육연수원 품질관리위원회 운영 및 품질인증</p>
-					
-								<p>·&nbsp;원격교육연수 신규 콘텐츠 개발 품질 검수(개발단계→연수원서버 포팅)</p>
-								<p>·&nbsp;원격교육연수원 튜터 운영·관리</p>
-								</td>
-							</tr>
-							<tr>
-								<td>정병호</td>
-								<td>02-559-3896</td>
-								<td class="txt_left">
-								<p>·&nbsp;종합·원격교육연수원 학습관리시스템(LMS) 관리·운영</p>
-					
-								<p>·&nbsp;종합·원격교육연수원 연수운영위원회 운영</p>
-					
-								<p>·&nbsp;종합·원격교육연수원 데이터 관리</p>
-					
-								<p>·&nbsp;종합·원격교육연수원 공통 사항 대응 및 운영예산 관리</p>
-								</td>
-							</tr>
-							<tr>
-								<td>이선영</td>
-								<td>02-559-3894</td>
-								<td class="txt_left">
-								<p>·&nbsp;종합·원격교육연수원 이수증 발급 및 연수이수대장 관리</p>
-
-								<p>·&nbsp;종합·원격교육연수원 민원응대 및 콜센터 관리</p>
-					
-								<p>·&nbsp;종합·원격교육연수원 기록 관리 및 강사 풀 관리</p>
-
-								<p>·&nbsp;종합교육연수원 외부기관 연계 연수 관리</p>
-
-								<p>·&nbsp;연수 시설·장비 관리(실시간 쌍방향 연수시설 구축) </p>
-								</td>
-							</tr>
-							<tr>
-								<td rowspan="3">연수지원</td>
-								<td>김훈</td>
-								<td>02-559-3981</td>
-								<td class="txt_left">·&nbsp;개인정보 보호 및 정보 보안</td>
-							</tr>
-							<tr>
-								<td>신준범</td>
-								<td>02-559-3993</td>
-								<td class="txt_left">·&nbsp;종합교육연수 비대면 쌍방향 소통 플랫폼 기술 지원</td>
-							</tr>
-							<tr>
-								<td>구선회</td>
-								<td>02-559-3995</td>
-								<td class="txt_left">·&nbsp;종합교육연수 비대면 쌍방향 소통 플랫폼 기술 지원</td>
-							</tr>
-							<tr>
-								<td rowspan="4">연수과정 설계·개발</td>
-								<td>강호영</td>
-								<td>02-559-3875</td>
-								<td class="txt_left">·&nbsp;과학문화확산 분야 연수 총괄 교수자</td>
-							</tr>
-							<tr>
-								<td>홍옥수</td>
-								<td>02-559-3930</td>
-								<td class="txt_left">·&nbsp;과학수학교육 분야 연수 총괄 교수자</td>
-							</tr>
-							<tr>
-								<td>서지연</td>
-								<td>02-559-3950</td>
-								<td class="txt_left">·&nbsp;창의활동지원 분야 연수 총괄 교수자</td>
-							</tr>
-							<tr>
-								<td>이현숙</td>
-								<td>02-559-3840</td>
-								<td class="txt_left">·&nbsp;소프트웨어·AI융합 분야 연수 총괄 교수자</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<!-- //table_wrap -->
-				
-			</div>
-			<!-- //sub_wrap -->
-		</div>
-		<!-- //container -->		
-		<footer id="footer">
-			<ul class="term_list clear">
-				<li><a href="javascript:;">서비스이용약관</a></li>
-				<li><a href="javascript:;">영상정보처리기기운영·관리방침 </a></li>
-				<li><a href="javascript:;">지적재산보호 </a></li>
-				<li><a href="javascript:;">개인정보처리방침</a></li>
-				<li><a href="javascript:;">이메일무단수집거부</a></li>
-				<li><a href="javascript:;">찾아오시는 길</a></li>
+				</li>
 			</ul>
-			<address>
-				서울시 강남구 선릉로 602(삼성동 삼릉빌딩)   
-				<span class="brline">
-					<span class="num">대표전화 : 02-559-3972</span>
-					<span class="num">팩스 : 02-552-2355</span>
-				</span>
-			</address>
-			<p class="copyright">Copyright &copy; KOFAC. All Rights Reserved. Since 2013</p>			
-		</footer>
-		<p class="totop"><a href="javascript:;">TOP</a></p>
-		<!-- //totop -->
+			<!-- //location_list -->
+			<h3 class="tit_page">조직도</h3>
+		</div>
+		<!-- //subtop_wrap -->
 	</div>
-	<!-- //wrap -->
+	<!-- //underline_wrap -->
+	<div class="sub_wrap">	
+		<div class="organization_img">
+			<img src="../img/organization_pc.png" class="pc" alt="이사장(이사회) 아래 연수원장이 있고, 그 아래 연수운영위원회, 품질관리위원회가 있고, 또한 그 아래 원격교육연수운영, 연수지원, 연수과정설계 개발 이 있고, 연수과정설계 개발 아래에는 과학문화확산팀, 과학수학교육팀, 창의활동지원팀, SW.AI융합팀 이 있다.">	
+			<div class="schedule_info top-42"></div>
+			<div class="table_wrap mo">
+				<img src="../img/organization_mo.png" style="width:650px" alt="이사장(이사회) 아래 연수원장이 있고, 그 아래 연수운영위원회, 품질관리위원회가 있고, 또한 그 아래 원격교육연수운영, 연수지원, 연수과정설계 개발 이 있고, 연수과정설계 개발 아래에는 과학문화확산팀, 과학수학교육팀, 창의활동지원팀, SW.AI융합팀 이 있다.">
+			</div>
+			
+		</div>
+		<!-- //organization_img -->
+		<div class="schedule_info"></div>
+		<div class="table_wrap">
+			<table class="vertical_tbl organ_short_tbl">
+				<caption>조직도 <span>조직원의 성명,직책.담당업무에 관한 정보를 제공하는 표</span></caption>
+				<colgroup>
+					<col class="organ_col1">
+					<col class="organ_col2">
+					<col class="organ_col3">
+					<col class="organ_col4">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">파트</th>
+						<th scope="col">성명</th>
+						<th scope="col">전화번호</th>
+						<th scope="col">담당업무</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>총괄</td>
+						<td>진병두</td>
+						<td>02-559-3890</td>
+						<td class="txt_left">·&nbsp;종합·원격교육연수원 업무 총괄</td>
+					</tr>
+					<tr>
+						<td rowspan="5">연수기획·운영</td>
+						<td>이인우</td>
+						<td>02-559-3892</td>
+						<td class="txt_left">
+						<p>·&nbsp;종합·원격교육연수원 평가지표 분석 및 관리</p>
 
-<!-- jQuery library -->
-<script src="../js/jquery-1.12.4.min.js"></script>
-<script src="../js/kofac_common.js"></script>
+						<p>·&nbsp;종합·원격교육연수원 운영성과 모니터링 및 통계 관리</p>
+			
+						<p>·&nbsp;2021년 종합교육연수원 운영평가 대비 실적 관리 및 정리</p>
+						</td>
+					</tr>
+					<tr>
+						<td>박세만</td>
+						<td>02-559-3895</td>
+						<td class="txt_left">
+						<p>·&nbsp;종합·원격교육연수 연수과정 기획·개발</p>
+			
+						<p>·&nbsp;종합·원격교육연수원 차세대 학습관리시스템(LMS) 구축</p>
 
-</body>
-</html>
+						<p>·&nbsp;종합·원격교육연수원 주요 보고문건 대응 및 신규사업 예산 관리</p>
+			
+						<p>·&nbsp;2021년 종합교육연수원 운영평가 대응</p>
+						</td>
+					</tr>
+					<tr>
+						<td>민영경</td>
+						<td>02-559-3891</td>
+						<td class="txt_left">
+						<p>·&nbsp;원격교육연수원 품질관리위원회 운영 및 품질인증</p>
+			
+						<p>·&nbsp;원격교육연수 신규 콘텐츠 개발 품질 검수(개발단계→연수원서버 포팅)</p>
+						<p>·&nbsp;원격교육연수원 튜터 운영·관리</p>
+						</td>
+					</tr>
+					<tr>
+						<td>정병호</td>
+						<td>02-559-3896</td>
+						<td class="txt_left">
+						<p>·&nbsp;종합·원격교육연수원 학습관리시스템(LMS) 관리·운영</p>
+			
+						<p>·&nbsp;종합·원격교육연수원 연수운영위원회 운영</p>
+			
+						<p>·&nbsp;종합·원격교육연수원 데이터 관리</p>
+			
+						<p>·&nbsp;종합·원격교육연수원 공통 사항 대응 및 운영예산 관리</p>
+						</td>
+					</tr>
+					<tr>
+						<td>이선영</td>
+						<td>02-559-3894</td>
+						<td class="txt_left">
+						<p>·&nbsp;종합·원격교육연수원 이수증 발급 및 연수이수대장 관리</p>
+
+						<p>·&nbsp;종합·원격교육연수원 민원응대 및 콜센터 관리</p>
+			
+						<p>·&nbsp;종합·원격교육연수원 기록 관리 및 강사 풀 관리</p>
+
+						<p>·&nbsp;종합교육연수원 외부기관 연계 연수 관리</p>
+
+						<p>·&nbsp;연수 시설·장비 관리(실시간 쌍방향 연수시설 구축) </p>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="3">연수지원</td>
+						<td>김훈</td>
+						<td>02-559-3981</td>
+						<td class="txt_left">·&nbsp;개인정보 보호 및 정보 보안</td>
+					</tr>
+					<tr>
+						<td>신준범</td>
+						<td>02-559-3993</td>
+						<td class="txt_left">·&nbsp;종합교육연수 비대면 쌍방향 소통 플랫폼 기술 지원</td>
+					</tr>
+					<tr>
+						<td>구선회</td>
+						<td>02-559-3995</td>
+						<td class="txt_left">·&nbsp;종합교육연수 비대면 쌍방향 소통 플랫폼 기술 지원</td>
+					</tr>
+					<tr>
+						<td rowspan="4">연수과정 설계·개발</td>
+						<td>강호영</td>
+						<td>02-559-3875</td>
+						<td class="txt_left">·&nbsp;과학문화확산 분야 연수 총괄 교수자</td>
+					</tr>
+					<tr>
+						<td>홍옥수</td>
+						<td>02-559-3930</td>
+						<td class="txt_left">·&nbsp;과학수학교육 분야 연수 총괄 교수자</td>
+					</tr>
+					<tr>
+						<td>서지연</td>
+						<td>02-559-3950</td>
+						<td class="txt_left">·&nbsp;창의활동지원 분야 연수 총괄 교수자</td>
+					</tr>
+					<tr>
+						<td>이현숙</td>
+						<td>02-559-3840</td>
+						<td class="txt_left">·&nbsp;소프트웨어·AI융합 분야 연수 총괄 교수자</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- //table_wrap -->
+		
+	</div>
+	<!-- //sub_wrap -->
+</div>
+
+
+<?php include "../layout/footer.html" ?>

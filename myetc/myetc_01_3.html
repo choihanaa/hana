@@ -1,5 +1,6 @@
 <?php include "../layout/header.html" ?>
 
+
 <div id="container">
 	<div class="underline_wrap">
 		<div class="subtop_wrap">	
@@ -28,76 +29,75 @@
 			<li class="clear">
 				<label for="name_lbl" class="tit_lbl">이름</label>
 				<div class="base_line text_line">
-					<input type="text" id="name_lbl" title="이름 입력">
+					<input type="text" id="name_lbl"/>
 				</div>
 			</li>
 			<li class="clear">
 				<label for="id_lbl" class="tit_lbl">아이디</label>
 				<div class="base_line text_line">
-					<input type="text" id="id_lbl" title="아이디 입력">
+					<input type="text" id="id_lbl"/>
 				</div>
 			</li>
 			<li class="clear">
 				<label for="pwd_lbl" class="tit_lbl">비밀번호</label>
 				<div class="base_line text_line">
-					<input type="password" id="pwd_lbl" title="비밀번호 입력">
+					<input type="password" id="pwd_lbl"/>
 					<span class="short_info">영문, 숫자, 특수문자 혼합 9자리 이상으로 입력해주세요. ( 특수문자 &lt;, >, “, ‘, &, / 는 사용할 수 없습니다. )</span>
 				</div>
 			</li>
 			<li class="clear">
 				<label for="pwd2_lbl" class="tit_lbl">비밀번호 확인</label>
 				<div class="base_line text_line">
-					<input type="password" id="pwd2_lbl" title="비밀번호 확인 입력">
+					<input type="password" id="pwd2_lbl"/>
 				</div>
 			</li>
 			<li class="clear">
 				<span class="tit_lbl">성별</span>
 				<div class="base_line">
-					<span class="radiosame_line"><input type="radio" name="gender" id="man_lbl" class="css-radio" checked><label for="man_lbl">남자</label></span>
-					<span class="radiosame_line mr0"><input type="radio" name="gender" id="woman_lbl" class="css-radio"><label for="woman_lbl">여자</label></span>
+					<span class="radiosame_line"><input type="radio" name="gender" id="man_lbl" class="css-radio" checked/><label for="man_lbl">남자</label></span>
+					<span class="radiosame_line mr0"><input type="radio" name="gender" id="woman_lbl" class="css-radio"/><label for="woman_lbl">여자</label></span>
 				</div>
 			</li>
 			<li class="clear birth_box">
 				<span class="tit_lbl">생년월일</span>
 				<div class="base_line text_line">
-					<input type="text" name="daterange" class="daterange" value="01/01/1980" title="생년월일 입력 및 선택">
+					<input type="text" name="daterange" class="daterange" value="01/01/1980" title="생년월일 입력"/>
 				</div>
 			</li>
 			<li class="clear">
 				<label for="phone_lbl" class="tit_lbl">휴대폰번호</label>
 				<div class="base_line text_line">
-					<input type="text" id="phone_lbl" title="휴대폰번호 입력">
+					<input type="text" id="phone_lbl"/>
 				</div>
 			</li>
 			<li class="clear email_box">
 				<label for="email_lbl" class="tit_lbl">이메일</label>
 				<div class="base_line pc_box">			<!-- PC에서 이메일 입력받는 부분 -->
-					<input type="text" id="email_lbl"> <span class="gubun">@</span> <input type="text" title="email 업체명 입력"> 
+					<input type="text" id="email_lbl"/> <span class="gubun">@</span> <input type="text" title="email 업체명 입력"/> 
 					<select title="이메일 업체 선택">
-						<option value="">직접입력</option>
-						<option value="">naver.com</option>
-						<option value="">daum.net</option>
-						<option value="">nate.com</option>
-						<option value="">outlook.com</option>
-						<option value="">gmail.com</option>
+						<option value="직접입력">직접입력</option>
+						<option value="naver">naver.com</option>
+						<option value="daum">daum.net</option>
+						<option value="nate">nate.com</option>
+						<option value="outlook">outlook.com</option>
+						<option value="gmail">gmail.com</option>
 					</select>
 				</div>
 				<div class="base_line mo_box">		<!-- 모바일에서 이메일 입력받는 부분 -->
-					<input type="text" id="email_lbl_m">
+					<input type="text" id="email_lbl_m" title="email 업체명 입력"/>
 				</div>
 			</li>
 			<li class="clear">
 				<label for="neis_lbl" class="tit_lbl">NEIS 개인번호</label>
 				<div class="base_line textbox_line">
-					<input type="text" id="neis_lbl" value="J102222222" title="NEIS 개인번호 입력">
-					<button type="button" class="btn_wire">확인</button>
+					<input type="text" id="neis_lbl" value="J102222222"/><button type="button" class="btn_wire">확인</button>
 					<p class="long_info">예) B101234567 : NEIS 개인번호는 (영문대문자1글자 + 숫자2자리 + 영문대문자/숫자1자리 + 숫자6자리) 로 구성됩니다.</p>
 				</div>
 			</li>
 			<li class="clear">
 				<label for="job_lbl" class="tit_lbl">직장(소속)</label>
 				<div class="base_line text_line">
-					<input type="text" id="job_lbl" title="직장(소속) 입력">
+					<input type="text" id="job_lbl"/>
 				</div>
 			</li>
 		</ul>
@@ -144,7 +144,7 @@
 				<label for="position_lbl" class="tit_lbl">직위</label>
 				<div class="base_line">
 					<select id="position_lbl" class="select_line">
-						<option value="">중등학교 1급 정교사</option>
+						<option value="중등학교 1급 정교사">중등학교 1급 정교사</option>
 					</select>
 				</div>
 			</li>
@@ -152,7 +152,7 @@
 				<label for="lec_lbl" class="tit_lbl">담당교과</label>
 				<div class="base_line">
 					<select id="lec_lbl" class="select_line">
-						<option value="">도덕과/사회과</option>
+						<option value="도덕과/사회과">도덕과/사회과</option>
 					</select>
 				</div>
 			</li>
@@ -166,7 +166,7 @@
 					<div class="acode_txt">
 						<label for="acode_lbl" class="pc">※좌측의 문자/숫자를 입력하세요</label>
 						<label for="acode_lbl" class="mo">※위의 문자/숫자를 입력하세요</label>
-						<input type="text" title="인증코드" id="acode_lbl">
+						<input type="text" title="인증코드" id="acode_lbl"/>
 					</div>
 				</div>
 			</li>
@@ -176,22 +176,22 @@
 			<li class="clear">
 				<span class="tit_lbl line2">메일링<span class="brline">(이벤트/행사안내)</span></span>
 				<div class="base_line">
-					<span class="radiosame_line"><input type="radio" name="mailing" id="mailok_lbl" class="css-radio" checked><label for="mailok_lbl">수신</label></span>
-					<span class="radiosame_line mr0"><input type="radio" name="mailing" id="mailnotok_lbl" class="css-radio"><label for="mailnotok_lbl">미수신</label></span>
+					<span class="radiosame_line"><input type="radio" name="mailing" id="mailok_lbl" class="css-radio" checked/><label for="mailok_lbl">수신</label></span>
+					<span class="radiosame_line mr0"><input type="radio" name="mailing" id="mailnotok_lbl" class="css-radio"/><label for="mailnotok_lbl">미수신</label></span>
 				</div>
 			</li>
 			<li class="clear">
 				<span class="tit_lbl">SMS 서비스</span>
 				<div class="base_line">
-					<span class="radiosame_line"><input type="radio" name="sms" id="smsok_lbl" class="css-radio" checked><label for="smsok_lbl">수신</label></span>
-					<span class="radiosame_line mr0"><input type="radio" name="sms" id="smsnotok_lbl" class="css-radio"><label for="smsnotok_lbl">미수신</label></span>
+					<span class="radiosame_line"><input type="radio" name="sms" id="smsok_lbl" class="css-radio" checked/><label for="smsok_lbl">수신</label></span>
+					<span class="radiosame_line mr0"><input type="radio" name="sms" id="smsnotok_lbl" class="css-radio"/><label for="smsnotok_lbl">미수신</label></span>
 				</div>
 			</li>
 			<li class="clear">
 				<span class="tit_lbl line2">사이언스올 / 사이언스<span class="brline">타임즈 뉴스레터</span></span>
 				<div class="base_line">
-					<span class="radiosame_line"><input type="radio" name="sience" id="sienceok_lbl" class="css-radio" checked><label for="sienceok_lbl">수신</label></span>
-					<span class="radiosame_line mr0"><input type="radio" name="sience" id="siencenotok_lbl" class="css-radio"><label for="siencenotok_lbl">미수신</label></span>
+					<span class="radiosame_line"><input type="radio" name="sience" id="sienceok_lbl" class="css-radio" checked/><label for="sienceok_lbl">수신</label></span>
+					<span class="radiosame_line mr0"><input type="radio" name="sience" id="siencenotok_lbl" class="css-radio"/><label for="siencenotok_lbl">미수신</label></span>
 				</div>
 			</li>
 		</ul>
@@ -200,9 +200,9 @@
 			<li class="clear">
 				<span class="tit_lbl line2">휴면 계정 전환 <span class="brline">유효기간</span></span>
 				<div class="base_line">
-					<span class="radiosame_line"><input type="radio" name="valid" id="valid1_lbl" class="css-radio" checked=""><label for="valid1_lbl">1년</label></span>
-					<span class="radiosame_line"><input type="radio" name="valid" id="valid2_lbl" class="css-radio"><label for="valid2_lbl">2년</label></span>
-					<span class="radiosame_line mr0"><input type="radio" name="valid" id="valid3_lbl" class="css-radio"><label for="valid3_lbl">3년</label></span>
+					<span class="radiosame_line"><input type="radio" name="valid" id="valid1_lbl" class="css-radio" checked=""/><label for="valid1_lbl">1년</label></span>
+					<span class="radiosame_line"><input type="radio" name="valid" id="valid2_lbl" class="css-radio"/><label for="valid2_lbl">2년</label></span>
+					<span class="radiosame_line mr0"><input type="radio" name="valid" id="valid3_lbl" class="css-radio"/><label for="valid3_lbl">3년</label></span>
 				</div>
 			</li>
 		</ul>
@@ -214,10 +214,10 @@
 	</div>
 	<!-- //sub_wrap -->
 </div>
-	
+		
 
 <!-- 학교검색 팝업 -->
-<div class="popup_area" style="display: block;">		<!-- ★ 확인을 위해 넣은 style="display: block;" 은 제거해 주십시오! ★ -->
+<div class="popup_area">		<!-- ★ 확인을 위해 넣은 style="display: block;" 은 제거해 주십시오! ★ -->
 	<div class="popup_base w650">	
 		<h3 class="pop_tit">학교검색</h3>
 		<a href="javascript:;" class="pop_close" onclick="$(this).parent().parent().hide();">닫기</a>
@@ -228,7 +228,7 @@
 					<tr>
 						<th scope="row"><label for="name_lbl_p">학교명</label></th>
 						<td>
-							<input type="text" id="name_lbl_p" title="학교명 입력" placeholder="토평초등학교">
+							<input type="text" id="name_lbl_p" title="학교명 입력" placeholder="토평초등학교"/>
 							<button type="button" class="btn_wire">검색</button>
 						</td>
 					</tr> 

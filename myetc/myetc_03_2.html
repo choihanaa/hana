@@ -1,66 +1,66 @@
 <?php include "../layout/header.html" ?>
 
 
-		<div id="container">
-			<div class="underline_wrap">
-				<div class="subtop_wrap">	
-					<ul class="location_list etc_location">					<!-- 기타 페이지에만  etc_location 클래스를 부여합니다. -->
-						<li><a href="javascript:;" class="home">홈</a></li>
-						<li><a href="javascript:;">연수이력 통합</a></li>
-					</ul>				
-					<h3 class="tit_page">연수이력 통합</h3>
-				</div>
-				<!-- //subtop_wrap -->
-			</div>
-			<!-- //underline_wrap -->
-			<div class="sub_wrap">	
-				<dl class="term_title sameheading">
-					<dt>연수이력 통합</dt>
-					<dd>
-						<span class="tot_id">[ 통합아이디 : tek_test ]</span>로 연수이력 통합을 진행합니다.<br>
-						연수이력 통합 후, 통합이 완료된 아이디는 자동 탈퇴처리 됩니다.
-					</dd>		
-				</dl>
-				<h4 class="tit_certification">연수이력 통합이 되는 아이디</h4>
-				<ul class="totid_list ok">
-					<li class="clear">
-						<div class="check_part">							
-							<span class="combine_id">tek_test <span class="date">가입일 : 2015.10.17</span></span>
-						</div>
-						<div class="history_part">
-							<span class="tit_history">연수이력 (<span class="colorfont1">2</span>건)</span>
-							<ul class="history_list">
-								<li>지능정보사회 핵심기술을 활용한 창의교육 / 수료</li>
-								<li>스마트로봇과 함께하는 소프트웨어 교육 / 미수료</li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-				<!-- //totid_list -->
-				<div class="btn_bottom">
-					<button type="button" class="btn_bigblue">통합하기</button>
-				</div>
-			</div>
-			<!-- //sub_wrap -->
+<div id="container">
+	<div class="underline_wrap">
+		<div class="subtop_wrap">	
+			<ul class="location_list etc_location">					<!-- 기타 페이지에만  etc_location 클래스를 부여합니다. -->
+				<li><a href="javascript:;" class="home">홈</a></li>
+				<li><a href="javascript:;">연수이력 통합</a></li>
+			</ul>				
+			<h3 class="tit_page">연수이력 통합</h3>
 		</div>
-	
-
-	<!-- 연수이력 통합 성공 팝업 -->
-	<div class="popup_area" style="display: block;">		<!-- ★ 확인을 위해 넣은 style="display: block;" 은 제거해 주십시오! ★ -->
-		<div class="popup_base w650">	
-			<h3 class="pop_tit">연수이력 통합 성공</h3>
-			<a href="javascript:;" class="pop_close" onclick="$(this).parent().parent().hide();">닫기</a>
-			<div class="pop_inner">
-				<p class="msg"><span class="tot_id">[ 통합아이디 : tek_test ] </span>로 연수이력 통합이 완료되었습니다.</p>
-			</div>
-			<!-- //pop_inner -->
-			<div class="popbtn_wrap">
-				<button type="button" class="btn_blue_b w100p">확인</button>
-			</div>
-		</div>
-		<!-- //popup_base -->
+		<!-- //subtop_wrap -->
 	</div>
-	<!-- //popup_area : 연수이력 통합 성공 팝업 -->
+	<!-- //underline_wrap -->
+	<div class="sub_wrap">	
+		<dl class="term_title sameheading">
+			<dt>연수이력 통합</dt>
+			<dd>
+				<span class="tot_id">[ 통합아이디 : tek_test ]</span>로 연수이력 통합을 진행합니다.<br/>
+				연수이력 통합 후, 통합이 완료된 아이디는 자동 탈퇴처리 됩니다.
+			</dd>		
+		</dl>
+		<h4 class="tit_certification">연수이력 통합이 되는 아이디</h4>
+		<ul class="totid_list ok">
+			<li class="clear">
+				<div class="check_part">							
+					<span class="combine_id">tek_test <span class="date">가입일 : 2015.10.17</span></span>
+				</div>
+				<div class="history_part">
+					<span class="tit_history">연수이력 (<span class="colorfont1">2</span>건)</span>
+					<ul class="history_list">
+						<li>지능정보사회 핵심기술을 활용한 창의교육 / 수료</li>
+						<li>스마트로봇과 함께하는 소프트웨어 교육 / 미수료</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<!-- //totid_list -->
+		<div class="btn_bottom">
+			<button type="button" class="btn_bigblue">통합하기</button>
+		</div>
+	</div>
+	<!-- //sub_wrap -->
+</div>
+		
 
-	
-	<?php include "../layout/footer.html" ?>
+<!-- 연수이력 통합 성공 팝업 -->
+<div class="popup_area" style="display: block;">		<!-- ★ 확인을 위해 넣은 style="display: block;" 은 제거해 주십시오! ★ -->
+	<div class="popup_base w650">	
+		<h3 class="pop_tit">연수이력 통합 성공</h3>
+		<a href="javascript:;" class="pop_close" onclick="$(this).parent().parent().hide();">닫기</a>
+		<div class="pop_inner">
+			<p class="msg"><span class="tot_id">[ 통합아이디 : tek_test ] </span>로 연수이력 통합이 완료되었습니다.</p>
+		</div>
+		<!-- //pop_inner -->
+		<div class="popbtn_wrap">
+			<button type="button" class="btn_blue_b w100p">확인</button>
+		</div>
+	</div>
+	<!-- //popup_base -->
+</div>
+<!-- //popup_area : 연수이력 통합 성공 팝업 -->
+
+
+<?php include "../layout/footer.html" ?>
