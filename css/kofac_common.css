@@ -106,7 +106,7 @@ textarea {-webkit-appearance:none; width:100%; padding:5px; border:1px solid rgb
 .btn_bigblue {display: inline-block; min-width:139px; padding:0 30px; text-align: center; height:45px; background: rgba(0, 92, 161); font-weight: 500; font-size:18px; vertical-align: middle; color:rgba(255, 255, 255);}
 .btn_transwire {display: inline-block; min-width:67px; height:30px; text-align: center; border:1px solid rgba(218, 221, 226); font-size:14px; vertical-align: middle;}
 .btn_square {display: inline-block; width:65px; height:65px; text-align: center; border:1px solid rgba(104,104,104,0.78); background: rgba(255, 255, 255); font-size:14px; vertical-align: middle;}
-.btn_darkzoom {display: inline-block; width:40px; height:40px; text-indent: -9000px; background:rgba(126, 133, 137) url(../img/btn_search_w.png) no-repeat center;}
+.btn_darkzoom {display: inline-block; width:40px; height:40px; text-indent: -9000px; background:rgba(59, 55, 52) url(../img/btn_search_w.png) no-repeat center;}
 .btn_idpw {display: inline-block; width:100%; height:50px; line-height:49px; text-align: center; border:1px solid rgba(51, 51, 51); font-weight: 500; font-size:18px;}
 .btn_idpw .ic_search {display: inline-block; width:23px; height:23px; margin-right:12px; background:url(../img/ico_idpw.png) no-repeat 0 0; position: relative; top:5px;}
 .btn_idpw .ic_sms {display: inline-block; width:15px; height:25px; margin-right:12px; background:url(../img/ico_idpw.png) no-repeat 0 -102px; position: relative; top:5px;}
@@ -596,7 +596,7 @@ input[type=text].daterange {width: 190px; background: url(../img/ico_datepicker.
 /*  소트&검색바*/
 .search_conditoin {margin-top:50px;}
 .search_conditoin .sort_line {float:left;}
-.search_conditoin .sort_line a {line-height: 40px; color:rgba(165, 165, 165);}
+.search_conditoin .sort_line a {line-height: 40px; color:rgba(102, 102, 102);}
 .search_conditoin .sort_line a:before {content:""; display: inline-block; width:1px; height:15px; background:rgba(165, 165, 165); margin:0 10px; position: relative; top:2px;}
 .search_conditoin .sort_line a:first-child:before {display: none;}
 .search_conditoin .sort_line a.on {color:rgba(51, 51, 51); font-weight:bold}
@@ -669,7 +669,7 @@ input[type=text].daterange {width: 190px; background: url(../img/ico_datepicker.
 .search_conditoin .total_line {margin-top:0; padding-top:10px;}
 .search_conditoin + .board_list {margin-top:10px;}
 .board_list li.gongji {padding-left:72px;}
-.board_list li.gongji .sticker {position: absolute; left:10px; top:16px; display: inline-block; width:49px; height:49px; line-height: 49px; text-align: center; border-radius:10px; background:rgba(151, 163, 172); font-weight:500; font-size:14px; color:rgba(255, 255, 255);}
+.board_list li.gongji .sticker {position: absolute; left:10px; top:16px; display: inline-block; width:49px; height:49px; line-height: 49px; text-align: center; border-radius:10px; background:rgba(59, 55, 52); font-weight:500; font-size:14px; color:rgba(255, 255, 255);}
 
 /* 고객센터-원격지원요청 */
 .remote_info {padding:50px 0 45px;}
@@ -725,7 +725,7 @@ input[type=text].daterange {width: 190px; background: url(../img/ico_datepicker.
 .guide_caution .tit_caution {font-weight:500; font-size:16px; color:rgba(175, 36, 41);}
 .guidecaution_list {padding:10px 0 0 10px;}
 .guidecaution_list li {padding-left:10px; text-indent:-10px; line-height: 1.8;}
-.guidecaution_list li.em {color:rgba(175, 36, 41);}
+.guidecaution_list li.em {color:rgba(175, 36, 41); font-weight:bold}
 
 /* 연수원소개-인사말 */
 .base_tab {position: relative; margin-top:50px; padding-top:50px;}
