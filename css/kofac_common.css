@@ -154,7 +154,7 @@ h1 a {display:block; width: 148px; height:32px; background:url(../img/logo.png) 
 .family_area .family {position:relative;}
 .family_area .family > a {position:relative; display: block; width:220px; height:45px; line-height:42px; padding-left:20px; background:rgb(59, 55, 52); font-family:Futura; font-size:14px; color:rgb(255, 255, 255); letter-spacing:0;}
 .family_area .family > a:after {content:"+"; display:block; width:10px; height:45px; position: absolute; right:10px; top:0;}
-.family_area .family .family-site {position:absolute; left:0; bottom:45px; width:100%; height:0; padding:10px 0; background:rgba(150,164,177,0.9); display:none; z-index: 100;}
+.family_area .family .family-site {position:absolute; left:0; bottom:45px; width:100%; height:0; padding:10px 0; background:rgba(59, 55, 52, 0.8); display:none; z-index: 100;}
 .family_area .family .family-site li a {display:block; padding:3px 0 3px 20px; font-size:14px; color:rgb(255, 255, 255);}
 .family_area .family .family-site li a .small {font-size:14px;}
 .mob_sliding  .btn_close {display: none;}
@@ -821,7 +821,7 @@ input[type=text].daterange {width: 190px; background: url(../img/ico_datepicker.
 .term_area p > b {font-weight:500; font-size:18px;}
 .term_area .termtxt_list li {padding-left:12px; text-indent:-12px;}
 .term_area .termtxt_list li p {padding-left:12px; text-indent:-10px;}
-.term_area .termtxt_list li p.dep3 {padding-left:25px;}
+.term_area .termtxt_list li .dep3 {padding-left:25px;}
 .term_area .vertical_tbl tr th {text-align: center;}
 .term_area .vertical_tbl tr td {word-break:break-word;}
 .term_area p.stit {font-weight: 500;}
