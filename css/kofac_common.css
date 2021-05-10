@@ -49,7 +49,7 @@ input[type=checkbox].css-checkbox + label {display:inline-block; padding-left:28
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	}
+}
 input[type=checkbox].css-checkbox:checked + label {background-position:0 -177px;}
 
 input[type=checkbox].css-checkbox2 {position:absolute; left:-9999px;}
@@ -59,7 +59,7 @@ input[type=checkbox].css-checkbox2 + label {display:inline-block; padding-left:3
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	}
+}
 input[type=checkbox].css-checkbox2:checked + label {background-position:0 -173px;}
 
 input[type=radio].css-radio {position:absolute; left:-9999px;}
@@ -70,7 +70,7 @@ input[type=radio].css-radio + label {display:inline-block; padding-left:28px; he
 	-moz-user-select: none;
 	-ms-user-select: none;
 	}
-input[type=radio].css-radio:checked + label {background-position:0 -178px;}
+input[type=radio].css-radio:checked + label {background-position:0 -178px}
 						
 select {-webkit-appearance: none; -moz-appearance: none; appearance: none; height:30px; padding:0 35px 0 10px; border:1px solid rgb(207, 207, 207); background:rgb(255, 255, 255) url(../img/ico_select.png) no-repeat right center; font-size:14px; color:rgb(51, 51, 51);}
 select::-ms-expand {display: none;}
